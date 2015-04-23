@@ -1,0 +1,40 @@
+    if(pc.id == 0){
+	imax1 = 35000*1.0
+	imax2 = 15000
+    }else if(pc.id == 1){
+	imax1 = 35000*0.9
+	imax2 = 15000
+    }else if(pc.id == 2){
+	imax1 = 35000*0.8
+	imax2 = 15000
+    }else if(pc.id == 3){
+	imax1 = 35000*0.7
+	imax2 = 15000
+    }else if(pc.id == 4){
+	imax1 = 35000*0.6
+	imax2 = 15000
+    }else if(pc.id == 5){
+	imax1 = 35000*0.5
+	imax2 = 15000
+    }
+    Interval = 300
+    for i = 0, cells.count -1 {
+	if(cells.object(i).type == 1){
+	    //cells.object(i).setStim(r_delay.repick(),r_imax1.repick())
+	    //print "type 1 ",i
+	    cells.object(i).Delay = r_delay1.repick()
+	    cells.object(i).setIntermitStim_gaus(cells.object(i).Delay,imax1,Interval,0,-1,0.00)
+	}else if(cells.object(i).type == 2){
+	    cells.object(i).setStim(r_delay1.repick(),r_imax1.repick())
+	}else if(cells.object(i).type == 3){
+	    //cells.object(i).setStim(r_delay.repick(),r_imax1.repick())
+	    cells.object(i).setStim(r_delay1.repick(),3700)
+	}else if(cells.object(i).type == 4){
+	    //cells.object(i).setStim(r_delay.repick(),r_imax2.repick())
+	    //print "type 4 ",i
+	    cells.object(i).Delay = r_delay2.repick()
+	    cells.object(i).setIntermitStim_gaus(cells.object(i).Delay,imax2,Interval,0,-1,0.00)
+	}else if(cells.object(i).type == 5){
+	    cells.object(i).setStim(r_delay2.repick(),r_imax2.repick())
+	}
+    }

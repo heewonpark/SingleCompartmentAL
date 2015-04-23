@@ -1,0 +1,27 @@
+load_file("nrngui.hoc")
+load_file("Stick.hoc")
+
+objref cell
+cell = new Stick()
+
+//cell.insertPN()
+//cell.insertFukuda()
+cell.insertLN()
+cell.setIclamp()
+cell.setVoltageRecord()
+
+cell.soma{
+    print gnabar_MsLN
+}
+tstop = 10
+dt = 0.025
+
+run()
+/*
+while(t < tstop){
+    fadvance()
+    cell.soma{
+	print iahp_MsLN, q_MsLN, ica, cai, ina, ik
+    }
+}*/
+cell.printVoltageRecord()

@@ -1,0 +1,2804 @@
+NEURON -- VERSION 7.3 ansi (1078:2b0c984183df) 2014-04-04
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2014
+See http://www.neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ GABAa.mod IAHP.mod IAHP2.mod IAHP2_0403.mod ICA.mod MsLN.mod MsLN_0403.mod cad.mod cad_0403.mod gabaa.mod gamma.mod intermittent_stim.mod intermittent_stim_gaus.mod intermittent_stim_withNoise.mod normrand_test.mod pGPeA_fukuda.mod stim.mod
+loading membrane mechanisms from /home/park/Programming/hoc/Belmabrouk/mod/x86_64/.libs/libnrnmech.so
+nrniv: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+NCELL 195 
+mkcells
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+connectcells
+connect cells with GABAergic synapse
+1 
+e2 1 0 
+LNlla	0	0	41
+LNlla	0	0	44
+LNlla	0	0	46
+LNlla	0	0	47
+LNlla	0	0	56
+LNlla	0	0	60
+LNlla	0	0	61
+LNlla	0	0	64
+LNlla	0	0	65
+LNlla	0	0	66
+LNlla	0	0	69
+LNlla	0	0	70
+LNlla	0	0	74
+LNlla	0	0	76
+LNlla	0	0	77
+LNlla	0	0	82
+LNlla	0	0	84
+LNlla	0	0	85
+LNlla	0	0	90
+LNlla	0	0	92
+LNlla	0	0	93
+LNlla	0	0	96
+LNlla	0	0	98
+LNlla	0	0	99
+LNlla	0	0	100
+LNlla	0	0	101
+LNlla	0	0	104
+LNlla	0	0	105
+LNlla	0	0	106
+LNlla	0	0	111
+LNlla	0	0	112
+LNlla	0	0	116
+LNlla	0	0	118
+LNlla	0	0	119
+LNlla	0	0	123
+LNlla	0	0	125
+LNllb	0	0	127
+LNllb	0	0	128
+LNllb	0	0	130
+LNllb	0	0	139
+LNllb	0	0	140
+LNllb	0	0	142
+LNllb	0	0	144
+LNllb	0	0	150
+LNllb	0	0	152
+LNllb	0	0	157
+LNllb	0	0	163
+LNllb	0	0	165
+LNllb	0	0	174
+LNllb	0	0	184
+LNllb	0	0	185
+LNllb	0	0	188
+LNllb	0	0	191
+a_cnt:36	b_cnt:17
+1 
+e2 1 1 
+LNlla	0	1	42
+LNlla	0	1	43
+LNlla	0	1	47
+LNlla	0	1	49
+LNlla	0	1	51
+LNlla	0	1	52
+LNlla	0	1	55
+LNlla	0	1	57
+LNlla	0	1	58
+LNlla	0	1	60
+LNlla	0	1	61
+LNlla	0	1	62
+LNlla	0	1	63
+LNlla	0	1	64
+LNlla	0	1	68
+LNlla	0	1	69
+LNlla	0	1	71
+LNlla	0	1	72
+LNlla	0	1	73
+LNlla	0	1	80
+LNlla	0	1	81
+LNlla	0	1	82
+LNlla	0	1	88
+LNlla	0	1	90
+LNlla	0	1	93
+LNlla	0	1	94
+LNlla	0	1	95
+LNlla	0	1	96
+LNlla	0	1	97
+LNlla	0	1	100
+LNlla	0	1	101
+LNlla	0	1	102
+LNlla	0	1	104
+LNlla	0	1	106
+LNlla	0	1	107
+LNlla	0	1	108
+LNlla	0	1	109
+LNlla	0	1	110
+LNlla	0	1	111
+LNlla	0	1	113
+LNlla	0	1	114
+LNlla	0	1	115
+LNlla	0	1	118
+LNlla	0	1	120
+LNlla	0	1	121
+LNlla	0	1	123
+LNlla	0	1	124
+LNlla	0	1	126
+LNllb	0	1	128
+LNllb	0	1	129
+LNllb	0	1	131
+LNllb	0	1	137
+LNllb	0	1	139
+LNllb	0	1	140
+LNllb	0	1	143
+LNllb	0	1	148
+LNllb	0	1	149
+LNllb	0	1	152
+LNllb	0	1	175
+LNllb	0	1	176
+LNllb	0	1	185
+LNllb	0	1	188
+LNllb	0	1	193
+a_cnt:48	b_cnt:15
+1 
+e2 1 2 
+LNlla	0	2	41
+LNlla	0	2	42
+LNlla	0	2	45
+LNlla	0	2	46
+LNlla	0	2	48
+LNlla	0	2	53
+LNlla	0	2	54
+LNlla	0	2	55
+LNlla	0	2	57
+LNlla	0	2	61
+LNlla	0	2	64
+LNlla	0	2	65
+LNlla	0	2	68
+LNlla	0	2	69
+LNlla	0	2	75
+LNlla	0	2	77
+LNlla	0	2	79
+LNlla	0	2	80
+LNlla	0	2	84
+LNlla	0	2	85
+LNlla	0	2	86
+LNlla	0	2	89
+LNlla	0	2	90
+LNlla	0	2	97
+LNlla	0	2	98
+LNlla	0	2	100
+LNlla	0	2	101
+LNlla	0	2	102
+LNlla	0	2	106
+LNlla	0	2	108
+LNlla	0	2	110
+LNlla	0	2	112
+LNlla	0	2	114
+LNlla	0	2	115
+LNlla	0	2	117
+LNlla	0	2	119
+LNlla	0	2	121
+LNlla	0	2	122
+LNlla	0	2	123
+LNlla	0	2	126
+LNllb	0	2	130
+LNllb	0	2	131
+LNllb	0	2	141
+LNllb	0	2	146
+LNllb	0	2	148
+LNllb	0	2	154
+LNllb	0	2	155
+LNllb	0	2	156
+LNllb	0	2	159
+LNllb	0	2	162
+LNllb	0	2	167
+LNllb	0	2	168
+LNllb	0	2	179
+LNllb	0	2	186
+LNllb	0	2	189
+LNllb	0	2	190
+LNllb	0	2	191
+a_cnt:40	b_cnt:17
+1 
+e2 1 3 
+LNlla	0	3	41
+LNlla	0	3	43
+LNlla	0	3	45
+LNlla	0	3	46
+LNlla	0	3	48
+LNlla	0	3	49
+LNlla	0	3	50
+LNlla	0	3	52
+LNlla	0	3	53
+LNlla	0	3	55
+LNlla	0	3	56
+LNlla	0	3	59
+LNlla	0	3	61
+LNlla	0	3	62
+LNlla	0	3	64
+LNlla	0	3	65
+LNlla	0	3	66
+LNlla	0	3	73
+LNlla	0	3	74
+LNlla	0	3	75
+LNlla	0	3	76
+LNlla	0	3	78
+LNlla	0	3	79
+LNlla	0	3	81
+LNlla	0	3	83
+LNlla	0	3	85
+LNlla	0	3	86
+LNlla	0	3	87
+LNlla	0	3	88
+LNlla	0	3	91
+LNlla	0	3	94
+LNlla	0	3	97
+LNlla	0	3	101
+LNlla	0	3	102
+LNlla	0	3	103
+LNlla	0	3	105
+LNlla	0	3	106
+LNlla	0	3	107
+LNlla	0	3	108
+LNlla	0	3	109
+LNlla	0	3	110
+LNlla	0	3	114
+LNlla	0	3	117
+LNlla	0	3	118
+LNlla	0	3	119
+LNlla	0	3	121
+LNlla	0	3	124
+LNlla	0	3	125
+LNlla	0	3	126
+LNllb	0	3	128
+LNllb	0	3	133
+LNllb	0	3	138
+LNllb	0	3	139
+LNllb	0	3	141
+LNllb	0	3	152
+LNllb	0	3	156
+LNllb	0	3	157
+LNllb	0	3	158
+LNllb	0	3	162
+LNllb	0	3	174
+LNllb	0	3	175
+LNllb	0	3	177
+LNllb	0	3	178
+LNllb	0	3	180
+a_cnt:49	b_cnt:15
+1 
+e2 1 4 
+LNlla	0	4	43
+LNlla	0	4	44
+LNlla	0	4	49
+LNlla	0	4	51
+LNlla	0	4	54
+LNlla	0	4	56
+LNlla	0	4	58
+LNlla	0	4	59
+LNlla	0	4	63
+LNlla	0	4	65
+LNlla	0	4	67
+LNlla	0	4	69
+LNlla	0	4	73
+LNlla	0	4	74
+LNlla	0	4	76
+LNlla	0	4	77
+LNlla	0	4	78
+LNlla	0	4	79
+LNlla	0	4	81
+LNlla	0	4	82
+LNlla	0	4	83
+LNlla	0	4	85
+LNlla	0	4	94
+LNlla	0	4	97
+LNlla	0	4	99
+LNlla	0	4	100
+LNlla	0	4	102
+LNlla	0	4	103
+LNlla	0	4	104
+LNlla	0	4	107
+LNlla	0	4	109
+LNlla	0	4	112
+LNlla	0	4	113
+LNlla	0	4	115
+LNlla	0	4	117
+LNlla	0	4	118
+LNlla	0	4	122
+LNlla	0	4	123
+LNlla	0	4	124
+LNllb	0	4	130
+LNllb	0	4	148
+LNllb	0	4	158
+LNllb	0	4	169
+LNllb	0	4	173
+LNllb	0	4	174
+LNllb	0	4	178
+LNllb	0	4	181
+LNllb	0	4	184
+LNllb	0	4	189
+LNllb	0	4	190
+LNllb	0	4	191
+LNllb	0	4	194
+a_cnt:39	b_cnt:13
+1 
+e2 1 5 
+LNlla	0	5	41
+LNlla	0	5	42
+LNlla	0	5	43
+LNlla	0	5	44
+LNlla	0	5	46
+LNlla	0	5	47
+LNlla	0	5	48
+LNlla	0	5	49
+LNlla	0	5	51
+LNlla	0	5	52
+LNlla	0	5	53
+LNlla	0	5	57
+LNlla	0	5	65
+LNlla	0	5	66
+LNlla	0	5	67
+LNlla	0	5	68
+LNlla	0	5	69
+LNlla	0	5	76
+LNlla	0	5	78
+LNlla	0	5	79
+LNlla	0	5	80
+LNlla	0	5	81
+LNlla	0	5	83
+LNlla	0	5	84
+LNlla	0	5	85
+LNlla	0	5	86
+LNlla	0	5	88
+LNlla	0	5	89
+LNlla	0	5	91
+LNlla	0	5	95
+LNlla	0	5	99
+LNlla	0	5	101
+LNlla	0	5	103
+LNlla	0	5	104
+LNlla	0	5	107
+LNlla	0	5	110
+LNlla	0	5	111
+LNlla	0	5	112
+LNlla	0	5	113
+LNlla	0	5	120
+LNlla	0	5	121
+LNlla	0	5	122
+LNllb	0	5	128
+LNllb	0	5	129
+LNllb	0	5	139
+LNllb	0	5	155
+LNllb	0	5	161
+LNllb	0	5	166
+LNllb	0	5	167
+LNllb	0	5	168
+LNllb	0	5	172
+LNllb	0	5	173
+LNllb	0	5	174
+LNllb	0	5	179
+LNllb	0	5	182
+LNllb	0	5	184
+LNllb	0	5	191
+LNllb	0	5	194
+a_cnt:42	b_cnt:16
+1 
+e2 1 6 
+LNlla	0	6	41
+LNlla	0	6	42
+LNlla	0	6	43
+LNlla	0	6	44
+LNlla	0	6	47
+LNlla	0	6	49
+LNlla	0	6	50
+LNlla	0	6	54
+LNlla	0	6	56
+LNlla	0	6	59
+LNlla	0	6	60
+LNlla	0	6	61
+LNlla	0	6	62
+LNlla	0	6	63
+LNlla	0	6	65
+LNlla	0	6	70
+LNlla	0	6	72
+LNlla	0	6	75
+LNlla	0	6	77
+LNlla	0	6	78
+LNlla	0	6	79
+LNlla	0	6	81
+LNlla	0	6	82
+LNlla	0	6	88
+LNlla	0	6	90
+LNlla	0	6	91
+LNlla	0	6	92
+LNlla	0	6	94
+LNlla	0	6	95
+LNlla	0	6	96
+LNlla	0	6	98
+LNlla	0	6	99
+LNlla	0	6	100
+LNlla	0	6	102
+LNlla	0	6	104
+LNlla	0	6	107
+LNlla	0	6	111
+LNlla	0	6	112
+LNlla	0	6	116
+LNlla	0	6	119
+LNlla	0	6	120
+LNlla	0	6	122
+LNlla	0	6	123
+LNlla	0	6	124
+LNllb	0	6	142
+LNllb	0	6	146
+LNllb	0	6	147
+LNllb	0	6	154
+LNllb	0	6	160
+LNllb	0	6	163
+LNllb	0	6	177
+LNllb	0	6	183
+LNllb	0	6	192
+a_cnt:44	b_cnt:9
+1 
+e2 1 7 
+LNlla	0	7	41
+LNlla	0	7	42
+LNlla	0	7	43
+LNlla	0	7	45
+LNlla	0	7	48
+LNlla	0	7	49
+LNlla	0	7	50
+LNlla	0	7	51
+LNlla	0	7	52
+LNlla	0	7	55
+LNlla	0	7	57
+LNlla	0	7	58
+LNlla	0	7	62
+LNlla	0	7	63
+LNlla	0	7	64
+LNlla	0	7	65
+LNlla	0	7	67
+LNlla	0	7	68
+LNlla	0	7	69
+LNlla	0	7	70
+LNlla	0	7	73
+LNlla	0	7	74
+LNlla	0	7	76
+LNlla	0	7	77
+LNlla	0	7	80
+LNlla	0	7	81
+LNlla	0	7	82
+LNlla	0	7	83
+LNlla	0	7	84
+LNlla	0	7	88
+LNlla	0	7	90
+LNlla	0	7	96
+LNlla	0	7	99
+LNlla	0	7	100
+LNlla	0	7	101
+LNlla	0	7	102
+LNlla	0	7	103
+LNlla	0	7	104
+LNlla	0	7	105
+LNlla	0	7	106
+LNlla	0	7	108
+LNlla	0	7	111
+LNlla	0	7	112
+LNlla	0	7	117
+LNlla	0	7	118
+LNlla	0	7	119
+LNlla	0	7	121
+LNlla	0	7	122
+LNlla	0	7	123
+LNlla	0	7	125
+LNllb	0	7	136
+LNllb	0	7	139
+LNllb	0	7	156
+LNllb	0	7	162
+LNllb	0	7	165
+LNllb	0	7	169
+LNllb	0	7	172
+LNllb	0	7	174
+LNllb	0	7	175
+LNllb	0	7	180
+LNllb	0	7	184
+LNllb	0	7	186
+LNllb	0	7	190
+LNllb	0	7	194
+a_cnt:50	b_cnt:14
+1 
+e2 1 8 
+LNlla	0	8	47
+LNlla	0	8	48
+LNlla	0	8	49
+LNlla	0	8	52
+LNlla	0	8	59
+LNlla	0	8	61
+LNlla	0	8	62
+LNlla	0	8	63
+LNlla	0	8	67
+LNlla	0	8	68
+LNlla	0	8	70
+LNlla	0	8	71
+LNlla	0	8	74
+LNlla	0	8	75
+LNlla	0	8	76
+LNlla	0	8	77
+LNlla	0	8	78
+LNlla	0	8	79
+LNlla	0	8	81
+LNlla	0	8	84
+LNlla	0	8	85
+LNlla	0	8	86
+LNlla	0	8	87
+LNlla	0	8	92
+LNlla	0	8	94
+LNlla	0	8	95
+LNlla	0	8	96
+LNlla	0	8	99
+LNlla	0	8	101
+LNlla	0	8	102
+LNlla	0	8	105
+LNlla	0	8	108
+LNlla	0	8	109
+LNlla	0	8	111
+LNlla	0	8	115
+LNlla	0	8	116
+LNlla	0	8	119
+LNlla	0	8	120
+LNlla	0	8	124
+LNlla	0	8	126
+LNllb	0	8	130
+LNllb	0	8	134
+LNllb	0	8	135
+LNllb	0	8	136
+LNllb	0	8	139
+LNllb	0	8	141
+LNllb	0	8	142
+LNllb	0	8	143
+LNllb	0	8	151
+LNllb	0	8	152
+LNllb	0	8	165
+LNllb	0	8	166
+LNllb	0	8	167
+LNllb	0	8	169
+LNllb	0	8	176
+LNllb	0	8	177
+LNllb	0	8	184
+LNllb	0	8	191
+a_cnt:40	b_cnt:18
+1 
+e2 1 9 
+LNlla	0	9	41
+LNlla	0	9	43
+LNlla	0	9	44
+LNlla	0	9	46
+LNlla	0	9	47
+LNlla	0	9	49
+LNlla	0	9	50
+LNlla	0	9	51
+LNlla	0	9	55
+LNlla	0	9	57
+LNlla	0	9	61
+LNlla	0	9	63
+LNlla	0	9	66
+LNlla	0	9	68
+LNlla	0	9	69
+LNlla	0	9	70
+LNlla	0	9	72
+LNlla	0	9	76
+LNlla	0	9	79
+LNlla	0	9	80
+LNlla	0	9	81
+LNlla	0	9	83
+LNlla	0	9	84
+LNlla	0	9	87
+LNlla	0	9	89
+LNlla	0	9	91
+LNlla	0	9	94
+LNlla	0	9	95
+LNlla	0	9	99
+LNlla	0	9	103
+LNlla	0	9	104
+LNlla	0	9	105
+LNlla	0	9	108
+LNlla	0	9	109
+LNlla	0	9	111
+LNlla	0	9	113
+LNlla	0	9	114
+LNlla	0	9	115
+LNlla	0	9	117
+LNlla	0	9	122
+LNlla	0	9	123
+LNlla	0	9	126
+LNllb	0	9	127
+LNllb	0	9	131
+LNllb	0	9	132
+LNllb	0	9	143
+LNllb	0	9	146
+LNllb	0	9	154
+LNllb	0	9	163
+LNllb	0	9	169
+LNllb	0	9	175
+LNllb	0	9	188
+LNllb	0	9	190
+LNllb	0	9	192
+LNllb	0	9	194
+a_cnt:42	b_cnt:13
+1 
+e2 1 10 
+LNlla	0	10	42
+LNlla	0	10	44
+LNlla	0	10	46
+LNlla	0	10	47
+LNlla	0	10	48
+LNlla	0	10	49
+LNlla	0	10	50
+LNlla	0	10	52
+LNlla	0	10	53
+LNlla	0	10	57
+LNlla	0	10	59
+LNlla	0	10	60
+LNlla	0	10	61
+LNlla	0	10	63
+LNlla	0	10	64
+LNlla	0	10	65
+LNlla	0	10	68
+LNlla	0	10	69
+LNlla	0	10	71
+LNlla	0	10	72
+LNlla	0	10	73
+LNlla	0	10	75
+LNlla	0	10	78
+LNlla	0	10	80
+LNlla	0	10	84
+LNlla	0	10	86
+LNlla	0	10	88
+LNlla	0	10	89
+LNlla	0	10	90
+LNlla	0	10	93
+LNlla	0	10	96
+LNlla	0	10	98
+LNlla	0	10	99
+LNlla	0	10	101
+LNlla	0	10	102
+LNlla	0	10	103
+LNlla	0	10	104
+LNlla	0	10	109
+LNlla	0	10	110
+LNlla	0	10	111
+LNlla	0	10	112
+LNlla	0	10	113
+LNlla	0	10	114
+LNlla	0	10	117
+LNlla	0	10	118
+LNlla	0	10	119
+LNlla	0	10	120
+LNlla	0	10	122
+LNlla	0	10	124
+LNlla	0	10	125
+LNllb	0	10	139
+LNllb	0	10	142
+LNllb	0	10	148
+LNllb	0	10	154
+LNllb	0	10	158
+LNllb	0	10	164
+LNllb	0	10	167
+LNllb	0	10	169
+LNllb	0	10	173
+LNllb	0	10	189
+LNllb	0	10	190
+LNllb	0	10	192
+LNllb	0	10	193
+a_cnt:50	b_cnt:13
+1 
+e2 1 11 
+LNlla	0	11	42
+LNlla	0	11	46
+LNlla	0	11	50
+LNlla	0	11	52
+LNlla	0	11	53
+LNlla	0	11	55
+LNlla	0	11	58
+LNlla	0	11	59
+LNlla	0	11	60
+LNlla	0	11	62
+LNlla	0	11	64
+LNlla	0	11	67
+LNlla	0	11	69
+LNlla	0	11	72
+LNlla	0	11	73
+LNlla	0	11	74
+LNlla	0	11	76
+LNlla	0	11	77
+LNlla	0	11	78
+LNlla	0	11	79
+LNlla	0	11	83
+LNlla	0	11	85
+LNlla	0	11	88
+LNlla	0	11	89
+LNlla	0	11	92
+LNlla	0	11	95
+LNlla	0	11	97
+LNlla	0	11	99
+LNlla	0	11	101
+LNlla	0	11	102
+LNlla	0	11	103
+LNlla	0	11	105
+LNlla	0	11	106
+LNlla	0	11	109
+LNlla	0	11	110
+LNlla	0	11	113
+LNlla	0	11	115
+LNlla	0	11	119
+LNlla	0	11	122
+LNlla	0	11	125
+LNllb	0	11	129
+LNllb	0	11	130
+LNllb	0	11	146
+LNllb	0	11	152
+LNllb	0	11	153
+LNllb	0	11	155
+LNllb	0	11	164
+LNllb	0	11	165
+LNllb	0	11	167
+LNllb	0	11	168
+LNllb	0	11	169
+LNllb	0	11	177
+LNllb	0	11	182
+LNllb	0	11	190
+LNllb	0	11	193
+a_cnt:40	b_cnt:15
+1 
+e2 1 12 
+LNlla	0	12	41
+LNlla	0	12	42
+LNlla	0	12	43
+LNlla	0	12	46
+LNlla	0	12	48
+LNlla	0	12	51
+LNlla	0	12	52
+LNlla	0	12	53
+LNlla	0	12	54
+LNlla	0	12	56
+LNlla	0	12	60
+LNlla	0	12	62
+LNlla	0	12	66
+LNlla	0	12	68
+LNlla	0	12	69
+LNlla	0	12	71
+LNlla	0	12	72
+LNlla	0	12	73
+LNlla	0	12	75
+LNlla	0	12	77
+LNlla	0	12	79
+LNlla	0	12	81
+LNlla	0	12	88
+LNlla	0	12	90
+LNlla	0	12	91
+LNlla	0	12	92
+LNlla	0	12	93
+LNlla	0	12	95
+LNlla	0	12	96
+LNlla	0	12	97
+LNlla	0	12	98
+LNlla	0	12	99
+LNlla	0	12	104
+LNlla	0	12	105
+LNlla	0	12	106
+LNlla	0	12	107
+LNlla	0	12	109
+LNlla	0	12	110
+LNlla	0	12	111
+LNlla	0	12	115
+LNlla	0	12	117
+LNlla	0	12	119
+LNlla	0	12	122
+LNllb	0	12	127
+LNllb	0	12	132
+LNllb	0	12	134
+LNllb	0	12	136
+LNllb	0	12	137
+LNllb	0	12	139
+LNllb	0	12	155
+LNllb	0	12	160
+LNllb	0	12	162
+LNllb	0	12	182
+LNllb	0	12	187
+LNllb	0	12	190
+LNllb	0	12	192
+a_cnt:43	b_cnt:13
+1 
+e2 1 13 
+LNlla	0	13	41
+LNlla	0	13	43
+LNlla	0	13	45
+LNlla	0	13	47
+LNlla	0	13	48
+LNlla	0	13	51
+LNlla	0	13	53
+LNlla	0	13	54
+LNlla	0	13	55
+LNlla	0	13	58
+LNlla	0	13	59
+LNlla	0	13	61
+LNlla	0	13	62
+LNlla	0	13	63
+LNlla	0	13	64
+LNlla	0	13	65
+LNlla	0	13	66
+LNlla	0	13	67
+LNlla	0	13	68
+LNlla	0	13	72
+LNlla	0	13	74
+LNlla	0	13	79
+LNlla	0	13	84
+LNlla	0	13	88
+LNlla	0	13	90
+LNlla	0	13	92
+LNlla	0	13	94
+LNlla	0	13	95
+LNlla	0	13	96
+LNlla	0	13	97
+LNlla	0	13	98
+LNlla	0	13	100
+LNlla	0	13	102
+LNlla	0	13	103
+LNlla	0	13	104
+LNlla	0	13	105
+LNlla	0	13	107
+LNlla	0	13	108
+LNlla	0	13	110
+LNlla	0	13	111
+LNlla	0	13	114
+LNlla	0	13	115
+LNlla	0	13	116
+LNlla	0	13	117
+LNlla	0	13	118
+LNlla	0	13	120
+LNlla	0	13	123
+LNlla	0	13	124
+LNlla	0	13	125
+LNllb	0	13	134
+LNllb	0	13	135
+LNllb	0	13	140
+LNllb	0	13	142
+LNllb	0	13	144
+LNllb	0	13	145
+LNllb	0	13	146
+LNllb	0	13	149
+LNllb	0	13	150
+LNllb	0	13	153
+LNllb	0	13	161
+LNllb	0	13	162
+LNllb	0	13	165
+LNllb	0	13	166
+LNllb	0	13	169
+LNllb	0	13	172
+LNllb	0	13	173
+LNllb	0	13	174
+LNllb	0	13	180
+LNllb	0	13	186
+LNllb	0	13	187
+a_cnt:49	b_cnt:21
+2 
+e2 2 14 
+LNlla	0	14	41
+LNlla	0	14	42
+LNlla	0	14	46
+LNlla	0	14	53
+LNlla	0	14	54
+LNlla	0	14	58
+LNlla	0	14	59
+LNlla	0	14	61
+LNlla	0	14	62
+LNlla	0	14	63
+LNlla	0	14	65
+LNlla	0	14	66
+LNlla	0	14	67
+LNlla	0	14	70
+LNlla	0	14	75
+LNlla	0	14	77
+LNlla	0	14	78
+LNlla	0	14	79
+LNlla	0	14	84
+LNlla	0	14	85
+LNlla	0	14	90
+LNlla	0	14	91
+LNlla	0	14	95
+LNlla	0	14	97
+LNlla	0	14	99
+LNlla	0	14	100
+LNlla	0	14	101
+LNlla	0	14	102
+LNlla	0	14	103
+LNlla	0	14	104
+LNlla	0	14	105
+LNlla	0	14	109
+LNlla	0	14	111
+LNlla	0	14	112
+LNlla	0	14	114
+LNlla	0	14	115
+LNlla	0	14	116
+LNlla	0	14	117
+LNlla	0	14	121
+LNlla	0	14	125
+LNllb	0	14	129
+LNllb	0	14	130
+LNllb	0	14	134
+LNllb	0	14	146
+LNllb	0	14	152
+LNllb	0	14	153
+LNllb	0	14	158
+LNllb	0	14	160
+LNllb	0	14	164
+LNllb	0	14	166
+LNllb	0	14	171
+LNllb	0	14	176
+LNllb	0	14	180
+LNllb	0	14	183
+LNllb	0	14	184
+LNllb	0	14	190
+a_cnt:40	b_cnt:16
+2 
+e2 2 15 
+LNlla	0	15	41
+LNlla	0	15	42
+LNlla	0	15	49
+LNlla	0	15	51
+LNlla	0	15	56
+LNlla	0	15	57
+LNlla	0	15	58
+LNlla	0	15	60
+LNlla	0	15	61
+LNlla	0	15	63
+LNlla	0	15	65
+LNlla	0	15	66
+LNlla	0	15	68
+LNlla	0	15	72
+LNlla	0	15	74
+LNlla	0	15	77
+LNlla	0	15	82
+LNlla	0	15	83
+LNlla	0	15	87
+LNlla	0	15	91
+LNlla	0	15	93
+LNlla	0	15	94
+LNlla	0	15	98
+LNlla	0	15	100
+LNlla	0	15	101
+LNlla	0	15	108
+LNlla	0	15	109
+LNlla	0	15	110
+LNlla	0	15	112
+LNlla	0	15	113
+LNlla	0	15	114
+LNlla	0	15	116
+LNlla	0	15	119
+LNlla	0	15	120
+LNlla	0	15	122
+LNlla	0	15	123
+LNlla	0	15	124
+LNllb	0	15	128
+LNllb	0	15	132
+LNllb	0	15	146
+LNllb	0	15	157
+LNllb	0	15	164
+LNllb	0	15	165
+LNllb	0	15	168
+LNllb	0	15	176
+LNllb	0	15	178
+LNllb	0	15	181
+LNllb	0	15	189
+LNllb	0	15	191
+LNllb	0	15	192
+a_cnt:37	b_cnt:13
+2 
+e2 2 16 
+LNlla	0	16	41
+LNlla	0	16	42
+LNlla	0	16	43
+LNlla	0	16	45
+LNlla	0	16	46
+LNlla	0	16	47
+LNlla	0	16	50
+LNlla	0	16	51
+LNlla	0	16	53
+LNlla	0	16	54
+LNlla	0	16	55
+LNlla	0	16	56
+LNlla	0	16	57
+LNlla	0	16	61
+LNlla	0	16	64
+LNlla	0	16	65
+LNlla	0	16	67
+LNlla	0	16	68
+LNlla	0	16	69
+LNlla	0	16	71
+LNlla	0	16	75
+LNlla	0	16	76
+LNlla	0	16	77
+LNlla	0	16	78
+LNlla	0	16	80
+LNlla	0	16	82
+LNlla	0	16	83
+LNlla	0	16	84
+LNlla	0	16	85
+LNlla	0	16	87
+LNlla	0	16	90
+LNlla	0	16	91
+LNlla	0	16	92
+LNlla	0	16	93
+LNlla	0	16	94
+LNlla	0	16	97
+LNlla	0	16	98
+LNlla	0	16	101
+LNlla	0	16	102
+LNlla	0	16	103
+LNlla	0	16	106
+LNlla	0	16	107
+LNlla	0	16	110
+LNlla	0	16	111
+LNlla	0	16	114
+LNlla	0	16	118
+LNlla	0	16	121
+LNlla	0	16	122
+LNlla	0	16	124
+LNlla	0	16	125
+LNllb	0	16	132
+LNllb	0	16	139
+LNllb	0	16	149
+LNllb	0	16	162
+LNllb	0	16	166
+LNllb	0	16	169
+LNllb	0	16	170
+LNllb	0	16	172
+LNllb	0	16	182
+LNllb	0	16	183
+LNllb	0	16	185
+LNllb	0	16	192
+LNllb	0	16	193
+LNllb	0	16	194
+a_cnt:50	b_cnt:14
+2 
+e2 2 17 
+LNlla	0	17	41
+LNlla	0	17	44
+LNlla	0	17	46
+LNlla	0	17	47
+LNlla	0	17	48
+LNlla	0	17	49
+LNlla	0	17	51
+LNlla	0	17	53
+LNlla	0	17	54
+LNlla	0	17	55
+LNlla	0	17	57
+LNlla	0	17	63
+LNlla	0	17	65
+LNlla	0	17	66
+LNlla	0	17	67
+LNlla	0	17	68
+LNlla	0	17	69
+LNlla	0	17	71
+LNlla	0	17	72
+LNlla	0	17	74
+LNlla	0	17	75
+LNlla	0	17	76
+LNlla	0	17	78
+LNlla	0	17	79
+LNlla	0	17	80
+LNlla	0	17	81
+LNlla	0	17	82
+LNlla	0	17	83
+LNlla	0	17	84
+LNlla	0	17	87
+LNlla	0	17	88
+LNlla	0	17	89
+LNlla	0	17	91
+LNlla	0	17	92
+LNlla	0	17	93
+LNlla	0	17	95
+LNlla	0	17	96
+LNlla	0	17	97
+LNlla	0	17	98
+LNlla	0	17	101
+LNlla	0	17	102
+LNlla	0	17	103
+LNlla	0	17	104
+LNlla	0	17	105
+LNlla	0	17	106
+LNlla	0	17	107
+LNlla	0	17	110
+LNlla	0	17	111
+LNlla	0	17	114
+LNlla	0	17	116
+LNlla	0	17	117
+LNlla	0	17	118
+LNlla	0	17	119
+LNlla	0	17	124
+LNlla	0	17	125
+LNlla	0	17	126
+LNllb	0	17	129
+LNllb	0	17	150
+LNllb	0	17	154
+LNllb	0	17	155
+LNllb	0	17	169
+LNllb	0	17	173
+LNllb	0	17	175
+LNllb	0	17	192
+a_cnt:56	b_cnt:8
+2 
+e2 2 18 
+LNlla	0	18	41
+LNlla	0	18	42
+LNlla	0	18	43
+LNlla	0	18	46
+LNlla	0	18	48
+LNlla	0	18	50
+LNlla	0	18	51
+LNlla	0	18	53
+LNlla	0	18	58
+LNlla	0	18	59
+LNlla	0	18	61
+LNlla	0	18	62
+LNlla	0	18	63
+LNlla	0	18	64
+LNlla	0	18	65
+LNlla	0	18	66
+LNlla	0	18	69
+LNlla	0	18	70
+LNlla	0	18	71
+LNlla	0	18	73
+LNlla	0	18	74
+LNlla	0	18	75
+LNlla	0	18	76
+LNlla	0	18	77
+LNlla	0	18	79
+LNlla	0	18	85
+LNlla	0	18	86
+LNlla	0	18	87
+LNlla	0	18	91
+LNlla	0	18	93
+LNlla	0	18	96
+LNlla	0	18	97
+LNlla	0	18	98
+LNlla	0	18	99
+LNlla	0	18	103
+LNlla	0	18	104
+LNlla	0	18	107
+LNlla	0	18	115
+LNlla	0	18	118
+LNlla	0	18	119
+LNlla	0	18	121
+LNlla	0	18	122
+LNlla	0	18	123
+LNlla	0	18	124
+LNlla	0	18	126
+LNllb	0	18	128
+LNllb	0	18	134
+LNllb	0	18	135
+LNllb	0	18	146
+LNllb	0	18	154
+LNllb	0	18	155
+LNllb	0	18	162
+LNllb	0	18	163
+LNllb	0	18	166
+LNllb	0	18	167
+LNllb	0	18	170
+LNllb	0	18	171
+LNllb	0	18	172
+LNllb	0	18	174
+LNllb	0	18	181
+LNllb	0	18	185
+LNllb	0	18	186
+LNllb	0	18	187
+a_cnt:45	b_cnt:18
+2 
+e2 2 19 
+LNlla	0	19	42
+LNlla	0	19	43
+LNlla	0	19	45
+LNlla	0	19	47
+LNlla	0	19	48
+LNlla	0	19	49
+LNlla	0	19	50
+LNlla	0	19	52
+LNlla	0	19	54
+LNlla	0	19	56
+LNlla	0	19	58
+LNlla	0	19	60
+LNlla	0	19	61
+LNlla	0	19	62
+LNlla	0	19	63
+LNlla	0	19	65
+LNlla	0	19	68
+LNlla	0	19	69
+LNlla	0	19	70
+LNlla	0	19	72
+LNlla	0	19	75
+LNlla	0	19	77
+LNlla	0	19	78
+LNlla	0	19	79
+LNlla	0	19	82
+LNlla	0	19	83
+LNlla	0	19	84
+LNlla	0	19	89
+LNlla	0	19	90
+LNlla	0	19	91
+LNlla	0	19	94
+LNlla	0	19	95
+LNlla	0	19	96
+LNlla	0	19	97
+LNlla	0	19	100
+LNlla	0	19	102
+LNlla	0	19	103
+LNlla	0	19	104
+LNlla	0	19	106
+LNlla	0	19	109
+LNlla	0	19	111
+LNlla	0	19	112
+LNlla	0	19	114
+LNlla	0	19	115
+LNlla	0	19	116
+LNlla	0	19	118
+LNlla	0	19	120
+LNlla	0	19	121
+LNlla	0	19	122
+LNlla	0	19	125
+LNllb	0	19	131
+LNllb	0	19	136
+LNllb	0	19	141
+LNllb	0	19	142
+LNllb	0	19	152
+LNllb	0	19	157
+LNllb	0	19	162
+LNllb	0	19	167
+LNllb	0	19	168
+LNllb	0	19	172
+LNllb	0	19	176
+LNllb	0	19	177
+LNllb	0	19	185
+a_cnt:50	b_cnt:13
+2 
+e2 2 20 
+LNlla	0	20	41
+LNlla	0	20	43
+LNlla	0	20	44
+LNlla	0	20	47
+LNlla	0	20	48
+LNlla	0	20	51
+LNlla	0	20	52
+LNlla	0	20	53
+LNlla	0	20	54
+LNlla	0	20	64
+LNlla	0	20	66
+LNlla	0	20	68
+LNlla	0	20	70
+LNlla	0	20	74
+LNlla	0	20	75
+LNlla	0	20	77
+LNlla	0	20	82
+LNlla	0	20	83
+LNlla	0	20	84
+LNlla	0	20	86
+LNlla	0	20	87
+LNlla	0	20	88
+LNlla	0	20	89
+LNlla	0	20	92
+LNlla	0	20	93
+LNlla	0	20	97
+LNlla	0	20	98
+LNlla	0	20	99
+LNlla	0	20	100
+LNlla	0	20	101
+LNlla	0	20	105
+LNlla	0	20	106
+LNlla	0	20	108
+LNlla	0	20	109
+LNlla	0	20	111
+LNlla	0	20	112
+LNlla	0	20	113
+LNlla	0	20	117
+LNlla	0	20	118
+LNlla	0	20	120
+LNlla	0	20	123
+LNlla	0	20	124
+LNlla	0	20	125
+LNlla	0	20	126
+LNllb	0	20	131
+LNllb	0	20	135
+LNllb	0	20	139
+LNllb	0	20	142
+LNllb	0	20	153
+LNllb	0	20	163
+LNllb	0	20	164
+LNllb	0	20	165
+LNllb	0	20	166
+LNllb	0	20	179
+LNllb	0	20	181
+LNllb	0	20	191
+LNllb	0	20	194
+a_cnt:44	b_cnt:13
+2 
+e2 2 21 
+LNlla	0	21	46
+LNlla	0	21	47
+LNlla	0	21	48
+LNlla	0	21	49
+LNlla	0	21	50
+LNlla	0	21	51
+LNlla	0	21	55
+LNlla	0	21	56
+LNlla	0	21	58
+LNlla	0	21	63
+LNlla	0	21	64
+LNlla	0	21	65
+LNlla	0	21	68
+LNlla	0	21	69
+LNlla	0	21	71
+LNlla	0	21	74
+LNlla	0	21	78
+LNlla	0	21	79
+LNlla	0	21	80
+LNlla	0	21	84
+LNlla	0	21	86
+LNlla	0	21	88
+LNlla	0	21	89
+LNlla	0	21	95
+LNlla	0	21	101
+LNlla	0	21	102
+LNlla	0	21	103
+LNlla	0	21	104
+LNlla	0	21	105
+LNlla	0	21	107
+LNlla	0	21	108
+LNlla	0	21	109
+LNlla	0	21	111
+LNlla	0	21	115
+LNlla	0	21	116
+LNlla	0	21	117
+LNlla	0	21	120
+LNlla	0	21	123
+LNlla	0	21	124
+LNlla	0	21	125
+LNllb	0	21	128
+LNllb	0	21	135
+LNllb	0	21	138
+LNllb	0	21	143
+LNllb	0	21	144
+LNllb	0	21	147
+LNllb	0	21	151
+LNllb	0	21	156
+LNllb	0	21	158
+LNllb	0	21	159
+LNllb	0	21	160
+LNllb	0	21	166
+LNllb	0	21	170
+LNllb	0	21	171
+LNllb	0	21	172
+LNllb	0	21	177
+LNllb	0	21	181
+LNllb	0	21	185
+LNllb	0	21	194
+a_cnt:40	b_cnt:19
+2 
+e2 2 22 
+LNlla	0	22	41
+LNlla	0	22	47
+LNlla	0	22	50
+LNlla	0	22	53
+LNlla	0	22	56
+LNlla	0	22	58
+LNlla	0	22	59
+LNlla	0	22	60
+LNlla	0	22	61
+LNlla	0	22	62
+LNlla	0	22	63
+LNlla	0	22	65
+LNlla	0	22	66
+LNlla	0	22	67
+LNlla	0	22	68
+LNlla	0	22	69
+LNlla	0	22	70
+LNlla	0	22	71
+LNlla	0	22	72
+LNlla	0	22	74
+LNlla	0	22	80
+LNlla	0	22	81
+LNlla	0	22	83
+LNlla	0	22	89
+LNlla	0	22	92
+LNlla	0	22	94
+LNlla	0	22	95
+LNlla	0	22	97
+LNlla	0	22	99
+LNlla	0	22	100
+LNlla	0	22	102
+LNlla	0	22	103
+LNlla	0	22	107
+LNlla	0	22	110
+LNlla	0	22	113
+LNlla	0	22	114
+LNlla	0	22	115
+LNlla	0	22	118
+LNlla	0	22	121
+LNlla	0	22	122
+LNlla	0	22	125
+LNlla	0	22	126
+LNllb	0	22	129
+LNllb	0	22	130
+LNllb	0	22	132
+LNllb	0	22	147
+LNllb	0	22	151
+LNllb	0	22	152
+LNllb	0	22	153
+LNllb	0	22	157
+LNllb	0	22	166
+LNllb	0	22	167
+LNllb	0	22	171
+LNllb	0	22	183
+LNllb	0	22	186
+a_cnt:42	b_cnt:13
+2 
+e2 2 23 
+LNlla	0	23	41
+LNlla	0	23	44
+LNlla	0	23	45
+LNlla	0	23	46
+LNlla	0	23	48
+LNlla	0	23	50
+LNlla	0	23	51
+LNlla	0	23	52
+LNlla	0	23	55
+LNlla	0	23	56
+LNlla	0	23	58
+LNlla	0	23	59
+LNlla	0	23	60
+LNlla	0	23	63
+LNlla	0	23	65
+LNlla	0	23	66
+LNlla	0	23	67
+LNlla	0	23	69
+LNlla	0	23	70
+LNlla	0	23	72
+LNlla	0	23	73
+LNlla	0	23	74
+LNlla	0	23	78
+LNlla	0	23	79
+LNlla	0	23	81
+LNlla	0	23	82
+LNlla	0	23	83
+LNlla	0	23	85
+LNlla	0	23	91
+LNlla	0	23	93
+LNlla	0	23	94
+LNlla	0	23	98
+LNlla	0	23	99
+LNlla	0	23	102
+LNlla	0	23	103
+LNlla	0	23	106
+LNlla	0	23	108
+LNlla	0	23	109
+LNlla	0	23	112
+LNlla	0	23	113
+LNlla	0	23	114
+LNlla	0	23	115
+LNlla	0	23	118
+LNlla	0	23	120
+LNlla	0	23	121
+LNlla	0	23	122
+LNllb	0	23	127
+LNllb	0	23	128
+LNllb	0	23	133
+LNllb	0	23	135
+LNllb	0	23	143
+LNllb	0	23	145
+LNllb	0	23	154
+LNllb	0	23	157
+LNllb	0	23	161
+LNllb	0	23	162
+LNllb	0	23	167
+LNllb	0	23	172
+LNllb	0	23	181
+LNllb	0	23	183
+LNllb	0	23	186
+LNllb	0	23	187
+LNllb	0	23	190
+LNllb	0	23	194
+a_cnt:46	b_cnt:18
+2 
+e2 2 24 
+LNlla	0	24	43
+LNlla	0	24	44
+LNlla	0	24	45
+LNlla	0	24	48
+LNlla	0	24	50
+LNlla	0	24	52
+LNlla	0	24	55
+LNlla	0	24	56
+LNlla	0	24	57
+LNlla	0	24	59
+LNlla	0	24	60
+LNlla	0	24	61
+LNlla	0	24	63
+LNlla	0	24	64
+LNlla	0	24	71
+LNlla	0	24	72
+LNlla	0	24	74
+LNlla	0	24	75
+LNlla	0	24	77
+LNlla	0	24	78
+LNlla	0	24	82
+LNlla	0	24	84
+LNlla	0	24	87
+LNlla	0	24	88
+LNlla	0	24	92
+LNlla	0	24	93
+LNlla	0	24	94
+LNlla	0	24	95
+LNlla	0	24	97
+LNlla	0	24	98
+LNlla	0	24	99
+LNlla	0	24	103
+LNlla	0	24	106
+LNlla	0	24	108
+LNlla	0	24	112
+LNlla	0	24	113
+LNlla	0	24	118
+LNlla	0	24	121
+LNlla	0	24	124
+LNlla	0	24	125
+LNllb	0	24	144
+LNllb	0	24	150
+LNllb	0	24	152
+LNllb	0	24	153
+LNllb	0	24	155
+LNllb	0	24	164
+LNllb	0	24	165
+LNllb	0	24	168
+LNllb	0	24	170
+LNllb	0	24	179
+LNllb	0	24	183
+LNllb	0	24	184
+LNllb	0	24	190
+a_cnt:40	b_cnt:13
+2 
+e2 2 25 
+LNlla	0	25	41
+LNlla	0	25	43
+LNlla	0	25	44
+LNlla	0	25	46
+LNlla	0	25	49
+LNlla	0	25	50
+LNlla	0	25	51
+LNlla	0	25	52
+LNlla	0	25	53
+LNlla	0	25	55
+LNlla	0	25	57
+LNlla	0	25	58
+LNlla	0	25	61
+LNlla	0	25	66
+LNlla	0	25	67
+LNlla	0	25	70
+LNlla	0	25	71
+LNlla	0	25	72
+LNlla	0	25	73
+LNlla	0	25	74
+LNlla	0	25	76
+LNlla	0	25	79
+LNlla	0	25	85
+LNlla	0	25	86
+LNlla	0	25	88
+LNlla	0	25	89
+LNlla	0	25	90
+LNlla	0	25	91
+LNlla	0	25	92
+LNlla	0	25	93
+LNlla	0	25	94
+LNlla	0	25	95
+LNlla	0	25	97
+LNlla	0	25	101
+LNlla	0	25	103
+LNlla	0	25	109
+LNlla	0	25	110
+LNlla	0	25	111
+LNlla	0	25	114
+LNlla	0	25	116
+LNlla	0	25	118
+LNlla	0	25	120
+LNlla	0	25	121
+LNlla	0	25	122
+LNlla	0	25	124
+LNlla	0	25	125
+LNllb	0	25	133
+LNllb	0	25	152
+LNllb	0	25	159
+LNllb	0	25	161
+LNllb	0	25	164
+LNllb	0	25	185
+LNllb	0	25	186
+LNllb	0	25	188
+LNllb	0	25	193
+a_cnt:46	b_cnt:9
+2 
+e2 2 26 
+LNlla	0	26	41
+LNlla	0	26	43
+LNlla	0	26	44
+LNlla	0	26	45
+LNlla	0	26	47
+LNlla	0	26	48
+LNlla	0	26	49
+LNlla	0	26	53
+LNlla	0	26	54
+LNlla	0	26	56
+LNlla	0	26	58
+LNlla	0	26	60
+LNlla	0	26	63
+LNlla	0	26	64
+LNlla	0	26	69
+LNlla	0	26	70
+LNlla	0	26	71
+LNlla	0	26	72
+LNlla	0	26	74
+LNlla	0	26	79
+LNlla	0	26	80
+LNlla	0	26	85
+LNlla	0	26	88
+LNlla	0	26	89
+LNlla	0	26	90
+LNlla	0	26	92
+LNlla	0	26	95
+LNlla	0	26	97
+LNlla	0	26	99
+LNlla	0	26	103
+LNlla	0	26	104
+LNlla	0	26	106
+LNlla	0	26	107
+LNlla	0	26	108
+LNlla	0	26	111
+LNlla	0	26	112
+LNlla	0	26	118
+LNlla	0	26	121
+LNlla	0	26	123
+LNlla	0	26	124
+LNllb	0	26	130
+LNllb	0	26	131
+LNllb	0	26	135
+LNllb	0	26	138
+LNllb	0	26	139
+LNllb	0	26	142
+LNllb	0	26	150
+LNllb	0	26	152
+LNllb	0	26	153
+LNllb	0	26	158
+LNllb	0	26	163
+LNllb	0	26	172
+LNllb	0	26	181
+LNllb	0	26	183
+LNllb	0	26	189
+LNllb	0	26	190
+a_cnt:40	b_cnt:16
+2 
+e2 2 27 
+LNlla	0	27	41
+LNlla	0	27	43
+LNlla	0	27	45
+LNlla	0	27	48
+LNlla	0	27	50
+LNlla	0	27	52
+LNlla	0	27	55
+LNlla	0	27	57
+LNlla	0	27	58
+LNlla	0	27	60
+LNlla	0	27	62
+LNlla	0	27	63
+LNlla	0	27	65
+LNlla	0	27	69
+LNlla	0	27	70
+LNlla	0	27	72
+LNlla	0	27	74
+LNlla	0	27	75
+LNlla	0	27	76
+LNlla	0	27	78
+LNlla	0	27	80
+LNlla	0	27	81
+LNlla	0	27	82
+LNlla	0	27	84
+LNlla	0	27	85
+LNlla	0	27	86
+LNlla	0	27	87
+LNlla	0	27	88
+LNlla	0	27	91
+LNlla	0	27	93
+LNlla	0	27	94
+LNlla	0	27	95
+LNlla	0	27	96
+LNlla	0	27	102
+LNlla	0	27	105
+LNlla	0	27	106
+LNlla	0	27	108
+LNlla	0	27	110
+LNlla	0	27	113
+LNlla	0	27	115
+LNlla	0	27	116
+LNlla	0	27	122
+LNllb	0	27	127
+LNllb	0	27	128
+LNllb	0	27	130
+LNllb	0	27	134
+LNllb	0	27	135
+LNllb	0	27	136
+LNllb	0	27	137
+LNllb	0	27	147
+LNllb	0	27	178
+LNllb	0	27	179
+LNllb	0	27	186
+LNllb	0	27	188
+LNllb	0	27	190
+LNllb	0	27	193
+LNllb	0	27	194
+a_cnt:42	b_cnt:15
+3 
+e2 3 28 
+LNlla	0	28	41
+LNlla	0	28	42
+LNlla	0	28	44
+LNlla	0	28	45
+LNlla	0	28	49
+LNlla	0	28	52
+LNlla	0	28	53
+LNlla	0	28	56
+LNlla	0	28	59
+LNlla	0	28	60
+LNlla	0	28	61
+LNlla	0	28	63
+LNlla	0	28	64
+LNlla	0	28	65
+LNlla	0	28	66
+LNlla	0	28	68
+LNlla	0	28	69
+LNlla	0	28	70
+LNlla	0	28	71
+LNlla	0	28	73
+LNlla	0	28	74
+LNlla	0	28	75
+LNlla	0	28	76
+LNlla	0	28	77
+LNlla	0	28	78
+LNlla	0	28	80
+LNlla	0	28	83
+LNlla	0	28	84
+LNlla	0	28	85
+LNlla	0	28	86
+LNlla	0	28	89
+LNlla	0	28	90
+LNlla	0	28	91
+LNlla	0	28	92
+LNlla	0	28	94
+LNlla	0	28	95
+LNlla	0	28	98
+LNlla	0	28	101
+LNlla	0	28	103
+LNlla	0	28	104
+LNlla	0	28	105
+LNlla	0	28	106
+LNlla	0	28	107
+LNlla	0	28	109
+LNlla	0	28	110
+LNlla	0	28	111
+LNlla	0	28	112
+LNlla	0	28	114
+LNlla	0	28	115
+LNlla	0	28	117
+LNlla	0	28	120
+LNlla	0	28	122
+LNlla	0	28	123
+LNlla	0	28	125
+LNlla	0	28	126
+LNllb	0	28	133
+LNllb	0	28	138
+LNllb	0	28	139
+LNllb	0	28	141
+LNllb	0	28	144
+LNllb	0	28	159
+LNllb	0	28	167
+LNllb	0	28	169
+LNllb	0	28	173
+LNllb	0	28	177
+LNllb	0	28	183
+LNllb	0	28	194
+a_cnt:55	b_cnt:12
+3 
+e2 3 29 
+LNlla	0	29	41
+LNlla	0	29	43
+LNlla	0	29	47
+LNlla	0	29	48
+LNlla	0	29	50
+LNlla	0	29	52
+LNlla	0	29	53
+LNlla	0	29	55
+LNlla	0	29	57
+LNlla	0	29	58
+LNlla	0	29	59
+LNlla	0	29	60
+LNlla	0	29	61
+LNlla	0	29	63
+LNlla	0	29	65
+LNlla	0	29	66
+LNlla	0	29	68
+LNlla	0	29	69
+LNlla	0	29	71
+LNlla	0	29	73
+LNlla	0	29	74
+LNlla	0	29	75
+LNlla	0	29	77
+LNlla	0	29	79
+LNlla	0	29	81
+LNlla	0	29	83
+LNlla	0	29	87
+LNlla	0	29	91
+LNlla	0	29	94
+LNlla	0	29	95
+LNlla	0	29	96
+LNlla	0	29	100
+LNlla	0	29	101
+LNlla	0	29	102
+LNlla	0	29	103
+LNlla	0	29	106
+LNlla	0	29	110
+LNlla	0	29	111
+LNlla	0	29	112
+LNlla	0	29	114
+LNlla	0	29	116
+LNlla	0	29	117
+LNlla	0	29	118
+LNlla	0	29	119
+LNlla	0	29	122
+LNlla	0	29	123
+LNlla	0	29	124
+LNlla	0	29	125
+LNlla	0	29	126
+LNllb	0	29	130
+LNllb	0	29	132
+LNllb	0	29	136
+LNllb	0	29	138
+LNllb	0	29	141
+LNllb	0	29	146
+LNllb	0	29	154
+LNllb	0	29	162
+LNllb	0	29	163
+LNllb	0	29	168
+a_cnt:49	b_cnt:10
+3 
+e2 3 30 
+LNlla	0	30	41
+LNlla	0	30	42
+LNlla	0	30	43
+LNlla	0	30	45
+LNlla	0	30	49
+LNlla	0	30	50
+LNlla	0	30	54
+LNlla	0	30	56
+LNlla	0	30	57
+LNlla	0	30	58
+LNlla	0	30	59
+LNlla	0	30	61
+LNlla	0	30	62
+LNlla	0	30	63
+LNlla	0	30	64
+LNlla	0	30	67
+LNlla	0	30	69
+LNlla	0	30	72
+LNlla	0	30	74
+LNlla	0	30	75
+LNlla	0	30	76
+LNlla	0	30	80
+LNlla	0	30	81
+LNlla	0	30	82
+LNlla	0	30	83
+LNlla	0	30	87
+LNlla	0	30	89
+LNlla	0	30	91
+LNlla	0	30	92
+LNlla	0	30	94
+LNlla	0	30	95
+LNlla	0	30	96
+LNlla	0	30	98
+LNlla	0	30	99
+LNlla	0	30	102
+LNlla	0	30	105
+LNlla	0	30	106
+LNlla	0	30	112
+LNlla	0	30	115
+LNlla	0	30	116
+LNlla	0	30	121
+LNlla	0	30	122
+LNlla	0	30	124
+LNlla	0	30	126
+LNllb	0	30	128
+LNllb	0	30	135
+LNllb	0	30	136
+LNllb	0	30	137
+LNllb	0	30	145
+LNllb	0	30	149
+LNllb	0	30	155
+LNllb	0	30	159
+LNllb	0	30	161
+LNllb	0	30	170
+LNllb	0	30	173
+LNllb	0	30	177
+LNllb	0	30	182
+LNllb	0	30	185
+LNllb	0	30	187
+a_cnt:44	b_cnt:15
+3 
+e2 3 31 
+LNlla	0	31	41
+LNlla	0	31	43
+LNlla	0	31	44
+LNlla	0	31	45
+LNlla	0	31	49
+LNlla	0	31	52
+LNlla	0	31	53
+LNlla	0	31	55
+LNlla	0	31	57
+LNlla	0	31	58
+LNlla	0	31	61
+LNlla	0	31	63
+LNlla	0	31	65
+LNlla	0	31	69
+LNlla	0	31	71
+LNlla	0	31	73
+LNlla	0	31	74
+LNlla	0	31	75
+LNlla	0	31	77
+LNlla	0	31	78
+LNlla	0	31	80
+LNlla	0	31	81
+LNlla	0	31	82
+LNlla	0	31	83
+LNlla	0	31	85
+LNlla	0	31	86
+LNlla	0	31	87
+LNlla	0	31	90
+LNlla	0	31	92
+LNlla	0	31	93
+LNlla	0	31	94
+LNlla	0	31	95
+LNlla	0	31	97
+LNlla	0	31	98
+LNlla	0	31	100
+LNlla	0	31	101
+LNlla	0	31	105
+LNlla	0	31	112
+LNlla	0	31	113
+LNlla	0	31	114
+LNlla	0	31	116
+LNlla	0	31	117
+LNlla	0	31	118
+LNlla	0	31	119
+LNlla	0	31	122
+LNlla	0	31	123
+LNlla	0	31	125
+LNllb	0	31	134
+LNllb	0	31	139
+LNllb	0	31	140
+LNllb	0	31	143
+LNllb	0	31	155
+LNllb	0	31	156
+LNllb	0	31	159
+LNllb	0	31	164
+LNllb	0	31	176
+LNllb	0	31	178
+LNllb	0	31	180
+LNllb	0	31	185
+LNllb	0	31	188
+LNllb	0	31	192
+a_cnt:47	b_cnt:14
+3 
+e2 3 32 
+LNlla	0	32	42
+LNlla	0	32	43
+LNlla	0	32	44
+LNlla	0	32	45
+LNlla	0	32	47
+LNlla	0	32	48
+LNlla	0	32	50
+LNlla	0	32	52
+LNlla	0	32	54
+LNlla	0	32	58
+LNlla	0	32	59
+LNlla	0	32	60
+LNlla	0	32	61
+LNlla	0	32	66
+LNlla	0	32	68
+LNlla	0	32	70
+LNlla	0	32	71
+LNlla	0	32	74
+LNlla	0	32	76
+LNlla	0	32	77
+LNlla	0	32	78
+LNlla	0	32	79
+LNlla	0	32	81
+LNlla	0	32	83
+LNlla	0	32	86
+LNlla	0	32	88
+LNlla	0	32	90
+LNlla	0	32	93
+LNlla	0	32	99
+LNlla	0	32	100
+LNlla	0	32	102
+LNlla	0	32	107
+LNlla	0	32	108
+LNlla	0	32	110
+LNlla	0	32	111
+LNlla	0	32	114
+LNlla	0	32	115
+LNlla	0	32	117
+LNlla	0	32	120
+LNlla	0	32	122
+LNlla	0	32	124
+LNlla	0	32	126
+LNllb	0	32	127
+LNllb	0	32	136
+LNllb	0	32	137
+LNllb	0	32	146
+LNllb	0	32	148
+LNllb	0	32	151
+LNllb	0	32	155
+LNllb	0	32	156
+LNllb	0	32	157
+LNllb	0	32	164
+LNllb	0	32	165
+LNllb	0	32	166
+LNllb	0	32	170
+LNllb	0	32	171
+LNllb	0	32	173
+LNllb	0	32	178
+LNllb	0	32	182
+LNllb	0	32	185
+LNllb	0	32	189
+LNllb	0	32	190
+LNllb	0	32	192
+LNllb	0	32	194
+a_cnt:42	b_cnt:22
+3 
+e2 3 33 
+LNlla	0	33	42
+LNlla	0	33	43
+LNlla	0	33	46
+LNlla	0	33	48
+LNlla	0	33	49
+LNlla	0	33	51
+LNlla	0	33	52
+LNlla	0	33	54
+LNlla	0	33	57
+LNlla	0	33	58
+LNlla	0	33	59
+LNlla	0	33	60
+LNlla	0	33	61
+LNlla	0	33	63
+LNlla	0	33	64
+LNlla	0	33	65
+LNlla	0	33	67
+LNlla	0	33	69
+LNlla	0	33	72
+LNlla	0	33	73
+LNlla	0	33	75
+LNlla	0	33	76
+LNlla	0	33	78
+LNlla	0	33	80
+LNlla	0	33	83
+LNlla	0	33	84
+LNlla	0	33	87
+LNlla	0	33	91
+LNlla	0	33	93
+LNlla	0	33	96
+LNlla	0	33	97
+LNlla	0	33	101
+LNlla	0	33	103
+LNlla	0	33	104
+LNlla	0	33	107
+LNlla	0	33	108
+LNlla	0	33	109
+LNlla	0	33	112
+LNlla	0	33	113
+LNlla	0	33	114
+LNlla	0	33	117
+LNlla	0	33	118
+LNlla	0	33	120
+LNlla	0	33	123
+LNlla	0	33	125
+LNlla	0	33	126
+LNllb	0	33	131
+LNllb	0	33	134
+LNllb	0	33	140
+LNllb	0	33	144
+LNllb	0	33	145
+LNllb	0	33	149
+LNllb	0	33	151
+LNllb	0	33	161
+LNllb	0	33	166
+LNllb	0	33	170
+LNllb	0	33	181
+LNllb	0	33	185
+LNllb	0	33	188
+a_cnt:46	b_cnt:13
+3 
+e2 3 34 
+LNlla	0	34	41
+LNlla	0	34	42
+LNlla	0	34	46
+LNlla	0	34	47
+LNlla	0	34	48
+LNlla	0	34	49
+LNlla	0	34	50
+LNlla	0	34	53
+LNlla	0	34	54
+LNlla	0	34	55
+LNlla	0	34	57
+LNlla	0	34	59
+LNlla	0	34	60
+LNlla	0	34	61
+LNlla	0	34	62
+LNlla	0	34	63
+LNlla	0	34	66
+LNlla	0	34	69
+LNlla	0	34	70
+LNlla	0	34	71
+LNlla	0	34	73
+LNlla	0	34	74
+LNlla	0	34	76
+LNlla	0	34	79
+LNlla	0	34	82
+LNlla	0	34	83
+LNlla	0	34	85
+LNlla	0	34	87
+LNlla	0	34	90
+LNlla	0	34	91
+LNlla	0	34	92
+LNlla	0	34	97
+LNlla	0	34	99
+LNlla	0	34	100
+LNlla	0	34	104
+LNlla	0	34	105
+LNlla	0	34	107
+LNlla	0	34	108
+LNlla	0	34	113
+LNlla	0	34	115
+LNlla	0	34	116
+LNlla	0	34	118
+LNlla	0	34	120
+LNlla	0	34	121
+LNlla	0	34	122
+LNlla	0	34	124
+LNlla	0	34	126
+LNllb	0	34	133
+LNllb	0	34	134
+LNllb	0	34	137
+LNllb	0	34	138
+LNllb	0	34	139
+LNllb	0	34	147
+LNllb	0	34	148
+LNllb	0	34	171
+LNllb	0	34	174
+LNllb	0	34	179
+LNllb	0	34	184
+LNllb	0	34	185
+LNllb	0	34	187
+a_cnt:47	b_cnt:13
+3 
+e2 3 35 
+LNlla	0	35	41
+LNlla	0	35	42
+LNlla	0	35	43
+LNlla	0	35	44
+LNlla	0	35	45
+LNlla	0	35	47
+LNlla	0	35	48
+LNlla	0	35	49
+LNlla	0	35	50
+LNlla	0	35	53
+LNlla	0	35	55
+LNlla	0	35	56
+LNlla	0	35	57
+LNlla	0	35	58
+LNlla	0	35	60
+LNlla	0	35	64
+LNlla	0	35	65
+LNlla	0	35	66
+LNlla	0	35	69
+LNlla	0	35	70
+LNlla	0	35	71
+LNlla	0	35	72
+LNlla	0	35	77
+LNlla	0	35	79
+LNlla	0	35	80
+LNlla	0	35	84
+LNlla	0	35	85
+LNlla	0	35	86
+LNlla	0	35	89
+LNlla	0	35	91
+LNlla	0	35	95
+LNlla	0	35	97
+LNlla	0	35	98
+LNlla	0	35	100
+LNlla	0	35	102
+LNlla	0	35	103
+LNlla	0	35	104
+LNlla	0	35	105
+LNlla	0	35	107
+LNlla	0	35	109
+LNlla	0	35	112
+LNlla	0	35	114
+LNlla	0	35	116
+LNlla	0	35	117
+LNlla	0	35	119
+LNlla	0	35	120
+LNlla	0	35	121
+LNlla	0	35	122
+LNlla	0	35	125
+LNlla	0	35	126
+LNllb	0	35	134
+LNllb	0	35	142
+LNllb	0	35	148
+LNllb	0	35	154
+LNllb	0	35	155
+LNllb	0	35	159
+LNllb	0	35	164
+LNllb	0	35	178
+LNllb	0	35	181
+LNllb	0	35	187
+a_cnt:50	b_cnt:10
+3 
+e2 3 36 
+LNlla	0	36	44
+LNlla	0	36	45
+LNlla	0	36	49
+LNlla	0	36	50
+LNlla	0	36	51
+LNlla	0	36	53
+LNlla	0	36	54
+LNlla	0	36	56
+LNlla	0	36	57
+LNlla	0	36	58
+LNlla	0	36	59
+LNlla	0	36	60
+LNlla	0	36	63
+LNlla	0	36	64
+LNlla	0	36	65
+LNlla	0	36	66
+LNlla	0	36	68
+LNlla	0	36	70
+LNlla	0	36	71
+LNlla	0	36	73
+LNlla	0	36	74
+LNlla	0	36	75
+LNlla	0	36	77
+LNlla	0	36	79
+LNlla	0	36	80
+LNlla	0	36	84
+LNlla	0	36	85
+LNlla	0	36	86
+LNlla	0	36	88
+LNlla	0	36	89
+LNlla	0	36	90
+LNlla	0	36	91
+LNlla	0	36	94
+LNlla	0	36	101
+LNlla	0	36	102
+LNlla	0	36	104
+LNlla	0	36	105
+LNlla	0	36	107
+LNlla	0	36	108
+LNlla	0	36	109
+LNlla	0	36	111
+LNlla	0	36	112
+LNlla	0	36	114
+LNlla	0	36	115
+LNlla	0	36	117
+LNlla	0	36	122
+LNlla	0	36	123
+LNlla	0	36	125
+LNlla	0	36	126
+LNllb	0	36	134
+LNllb	0	36	137
+LNllb	0	36	138
+LNllb	0	36	139
+LNllb	0	36	141
+LNllb	0	36	142
+LNllb	0	36	146
+LNllb	0	36	154
+LNllb	0	36	156
+LNllb	0	36	157
+LNllb	0	36	163
+LNllb	0	36	164
+LNllb	0	36	166
+LNllb	0	36	177
+LNllb	0	36	183
+LNllb	0	36	185
+a_cnt:49	b_cnt:16
+3 
+e2 3 37 
+LNlla	0	37	41
+LNlla	0	37	42
+LNlla	0	37	44
+LNlla	0	37	48
+LNlla	0	37	50
+LNlla	0	37	51
+LNlla	0	37	52
+LNlla	0	37	53
+LNlla	0	37	55
+LNlla	0	37	56
+LNlla	0	37	57
+LNlla	0	37	58
+LNlla	0	37	59
+LNlla	0	37	61
+LNlla	0	37	63
+LNlla	0	37	65
+LNlla	0	37	66
+LNlla	0	37	68
+LNlla	0	37	69
+LNlla	0	37	70
+LNlla	0	37	71
+LNlla	0	37	74
+LNlla	0	37	75
+LNlla	0	37	76
+LNlla	0	37	77
+LNlla	0	37	78
+LNlla	0	37	79
+LNlla	0	37	80
+LNlla	0	37	81
+LNlla	0	37	82
+LNlla	0	37	83
+LNlla	0	37	84
+LNlla	0	37	86
+LNlla	0	37	90
+LNlla	0	37	91
+LNlla	0	37	92
+LNlla	0	37	95
+LNlla	0	37	96
+LNlla	0	37	100
+LNlla	0	37	101
+LNlla	0	37	102
+LNlla	0	37	103
+LNlla	0	37	105
+LNlla	0	37	106
+LNlla	0	37	109
+LNlla	0	37	110
+LNlla	0	37	113
+LNlla	0	37	116
+LNlla	0	37	119
+LNlla	0	37	120
+LNlla	0	37	122
+LNlla	0	37	123
+LNlla	0	37	124
+LNlla	0	37	125
+LNlla	0	37	126
+LNllb	0	37	128
+LNllb	0	37	134
+LNllb	0	37	147
+LNllb	0	37	148
+LNllb	0	37	158
+LNllb	0	37	162
+LNllb	0	37	168
+LNllb	0	37	179
+LNllb	0	37	180
+LNllb	0	37	184
+LNllb	0	37	185
+LNllb	0	37	188
+LNllb	0	37	190
+a_cnt:55	b_cnt:13
+3 
+e2 3 38 
+LNlla	0	38	43
+LNlla	0	38	44
+LNlla	0	38	45
+LNlla	0	38	46
+LNlla	0	38	50
+LNlla	0	38	51
+LNlla	0	38	52
+LNlla	0	38	53
+LNlla	0	38	54
+LNlla	0	38	57
+LNlla	0	38	60
+LNlla	0	38	61
+LNlla	0	38	62
+LNlla	0	38	67
+LNlla	0	38	68
+LNlla	0	38	72
+LNlla	0	38	73
+LNlla	0	38	75
+LNlla	0	38	78
+LNlla	0	38	79
+LNlla	0	38	80
+LNlla	0	38	81
+LNlla	0	38	92
+LNlla	0	38	93
+LNlla	0	38	95
+LNlla	0	38	97
+LNlla	0	38	98
+LNlla	0	38	99
+LNlla	0	38	100
+LNlla	0	38	103
+LNlla	0	38	104
+LNlla	0	38	105
+LNlla	0	38	106
+LNlla	0	38	107
+LNlla	0	38	108
+LNlla	0	38	109
+LNlla	0	38	110
+LNlla	0	38	111
+LNlla	0	38	115
+LNlla	0	38	118
+LNlla	0	38	122
+LNlla	0	38	126
+LNllb	0	38	130
+LNllb	0	38	132
+LNllb	0	38	145
+LNllb	0	38	152
+LNllb	0	38	154
+LNllb	0	38	160
+LNllb	0	38	162
+LNllb	0	38	169
+LNllb	0	38	172
+LNllb	0	38	187
+LNllb	0	38	188
+LNllb	0	38	190
+LNllb	0	38	193
+a_cnt:42	b_cnt:13
+3 
+e2 3 39 
+LNlla	0	39	43
+LNlla	0	39	44
+LNlla	0	39	45
+LNlla	0	39	47
+LNlla	0	39	48
+LNlla	0	39	49
+LNlla	0	39	51
+LNlla	0	39	52
+LNlla	0	39	54
+LNlla	0	39	55
+LNlla	0	39	56
+LNlla	0	39	58
+LNlla	0	39	59
+LNlla	0	39	63
+LNlla	0	39	64
+LNlla	0	39	65
+LNlla	0	39	66
+LNlla	0	39	67
+LNlla	0	39	68
+LNlla	0	39	75
+LNlla	0	39	77
+LNlla	0	39	80
+LNlla	0	39	84
+LNlla	0	39	86
+LNlla	0	39	91
+LNlla	0	39	92
+LNlla	0	39	93
+LNlla	0	39	94
+LNlla	0	39	102
+LNlla	0	39	104
+LNlla	0	39	107
+LNlla	0	39	109
+LNlla	0	39	110
+LNlla	0	39	111
+LNlla	0	39	112
+LNlla	0	39	113
+LNlla	0	39	114
+LNlla	0	39	116
+LNlla	0	39	117
+LNlla	0	39	118
+LNlla	0	39	122
+LNllb	0	39	132
+LNllb	0	39	133
+LNllb	0	39	135
+LNllb	0	39	136
+LNllb	0	39	140
+LNllb	0	39	153
+LNllb	0	39	159
+LNllb	0	39	160
+LNllb	0	39	162
+LNllb	0	39	165
+LNllb	0	39	170
+LNllb	0	39	174
+LNllb	0	39	175
+LNllb	0	39	177
+LNllb	0	39	178
+LNllb	0	39	179
+LNllb	0	39	180
+LNllb	0	39	186
+LNllb	0	39	187
+a_cnt:41	b_cnt:19
+3 
+e2 3 40 
+LNlla	0	40	41
+LNlla	0	40	42
+LNlla	0	40	43
+LNlla	0	40	44
+LNlla	0	40	46
+LNlla	0	40	49
+LNlla	0	40	50
+LNlla	0	40	51
+LNlla	0	40	53
+LNlla	0	40	55
+LNlla	0	40	57
+LNlla	0	40	58
+LNlla	0	40	60
+LNlla	0	40	61
+LNlla	0	40	62
+LNlla	0	40	64
+LNlla	0	40	65
+LNlla	0	40	70
+LNlla	0	40	71
+LNlla	0	40	73
+LNlla	0	40	77
+LNlla	0	40	78
+LNlla	0	40	79
+LNlla	0	40	80
+LNlla	0	40	81
+LNlla	0	40	84
+LNlla	0	40	86
+LNlla	0	40	87
+LNlla	0	40	91
+LNlla	0	40	96
+LNlla	0	40	99
+LNlla	0	40	100
+LNlla	0	40	102
+LNlla	0	40	104
+LNlla	0	40	106
+LNlla	0	40	108
+LNlla	0	40	109
+LNlla	0	40	110
+LNlla	0	40	112
+LNlla	0	40	114
+LNlla	0	40	115
+LNlla	0	40	117
+LNlla	0	40	118
+LNlla	0	40	120
+LNlla	0	40	123
+LNlla	0	40	124
+LNllb	0	40	127
+LNllb	0	40	128
+LNllb	0	40	129
+LNllb	0	40	132
+LNllb	0	40	136
+LNllb	0	40	139
+LNllb	0	40	147
+LNllb	0	40	150
+LNllb	0	40	151
+LNllb	0	40	160
+LNllb	0	40	170
+LNllb	0	40	179
+LNllb	0	40	188
+LNllb	0	40	191
+LNllb	0	40	194
+a_cnt:46	b_cnt:15
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+5 
+area 157079.63 
+spikerecord
+	0 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 3 Fukuda 
+flg 1 MsLN 
+flg 1 MsLN 
+flg 1 MsLN 
+flg 1 MsLN 
+flg 1 MsLN 
+flg 1 MsLN 
+flg 1 MsLN 
+flg 1 MsLN 
+flg 1 MsLN 
+flg 1 MsLN 
+flg 1 MsLN 
+flg 1 MsLN 
+flg 1 MsLN 
+flg 1 MsLN 
+flg 1 MsLN 

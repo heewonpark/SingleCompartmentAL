@@ -1,0 +1,6 @@
+nrnpython("import random")
+objref py
+py = new PythonObject()
+py.a = 1
+nrnpython("a = random.random()")
+print py.a
