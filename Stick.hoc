@@ -89,7 +89,6 @@ public gsyn,esyn
 objref gsyn
 
 obfunc setgaba(){
-    
     soma gsyn = new GABA(0.3) gabalist.append(gsyn)
     gsyn.gmax = $1
     return gsyn
@@ -114,7 +113,6 @@ obfunc setGABAllb(){
 objref esyn
 obfunc setExp2Syn(){local rev
     rev = $1
-    
     soma esyn = new Exp2Syn(0.7) synlist.append(esyn)
     esyn.e = rev
     return esyn
@@ -381,6 +379,7 @@ obfunc setIntermitStim_withNoise(){local delay, imax, interval, imax2, nstim
     return st1
 }
 */
+
 public setIntermitStim_gaus
 obfunc setIntermitStim_gaus(){local delay, imax, interval, imax2, nstim,sigma_o
     delay = $1
