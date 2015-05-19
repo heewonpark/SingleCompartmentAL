@@ -8,11 +8,18 @@
 # comment added 2015.03.30
 #-------------------------------------------------
 
+# MODIFIED HISTORY
+# 05.17 fontsize is changed
 
 import matplotlib.pyplot as plt
 from matplotlib import pylab
 import sys
 import os.path
+import matplotlib
+
+matplotlib.rc('xtick',labelsize = 15)
+matplotlib.rc('ytick',labelsize = 15)
+
 
 def drawGraph(filename, show):
     datafile = open(filename,'r')
@@ -40,10 +47,10 @@ def drawGraph(filename, show):
     for j in range(1,nColumns):
         pylab.plot(vec[0], vec[j])
     #pylab.ylim(-100, 80)
-
-    pylab.xlabel("time[ms]")
-    #pylab.ylabel("current[nA]")
-    pylab.ylabel("membrain potential[mV]")
+    pylab.xlim(0,4000)
+    pylab.xlabel("time[ms]",fontsize = 15)
+    #pylab.ylabel("Stimulation input current[nA]")
+    pylab.ylabel("membrain potential[mV]",fontsize=15)
     tmp = filename.rsplit('.',1)
     imgFilename = "%s.png"%tmp[0]
     #print imgFilename, tmp

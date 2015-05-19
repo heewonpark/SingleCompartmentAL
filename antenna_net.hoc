@@ -21,7 +21,7 @@ nLNb = 0     // Number of LN-llb
 NCELL = nBALPN + nC15PN + nMULTIPN + nLNa + nLNb
 // NCELL : number of whole cells
 
-TSTOP = 2000
+TSTOP = 15000
 
 print "NCELL ", NCELL
 
@@ -209,8 +209,48 @@ proc connectcells_withgaba(){local i,j, a_cnt, b_cnt localobj gaba
 	    b_cnt = 0
 	    for j=nBALPN + nC15PN + nMULTIPN, NCELL-1{
 		if((j>=nBALPN + nC15PN + nMULTIPN) && (j<nBALPN + nC15PN + nMULTIPN + nLNa)){
-		    if(rnd.repick()<0.5){
-			gaba = cells.object(i).setgaba(2.0/nBALPN)
+		    kakuritsu_LNtoPN = 0.5
+		    /*
+		    if(pc.id == 0){
+			kakuritsu_LNtoPN = 0.2
+		    }else if(pc.id == 1){
+			kakuritsu_LNtoPN = 0.4
+		    }else if(pc.id == 2){
+			kakuritsu_LNtoPN = 0.6
+		    }else if(pc.id == 3){
+			kakuritsu_LNtoPN = 0.8
+		    }*//*else if(pc.id == 4){
+			kakuritsu_LNtoPN = 0.5
+		    }else if(pc.id == 5){
+			kakuritsu_LNtoPN = 0.6
+		    }else if(pc.id == 6){
+			kakuritsu_LNtoPN = 0.7
+		    }else if(pc.id == 7){
+			kakuritsu_LNtoPN = 0.8
+		    }*/
+		    
+		    if(rnd.repick()<kakuritsu_LNtoPN){
+			gmax_LNtoPN = 2.0
+			
+			if(pc.id == 0){
+			    gmax_LNtoPN = 0.5
+			}else if(pc.id == 1){
+			    gmax_LNtoPN = 1.0
+			}else if(pc.id == 2){
+			    gmax_LNtoPN = 1.5
+			}else if(pc.id == 3){
+			    gmax_LNtoPN = 2.0
+			}else if(pc.id == 4){
+			    gmax_LNtoPN = 2.5
+			}else if(pc.id == 5){
+			    gmax_LNtoPN = 3.0
+			}else if(pc.id == 6){
+			    gmax_LNtoPN = 3.5
+			}else if(pc.id == 7){
+			    gmax_LNtoPN = 4.0
+			}
+			
+			gaba = cells.object(i).setgaba(gmax_LNtoPN/nBALPN)
 			setpointer gaba.pre, cells.object(j).soma.v(0.5)
 			gabalist.append(gaba)
 			a_cnt += 1
@@ -232,10 +272,49 @@ proc connectcells_withgaba(){local i,j, a_cnt, b_cnt localobj gaba
 	}else if(cells.object(i).type == 4){
 	    for j=nBALPN+nC15PN+nMULTIPN, NCELL-1{
 		if((j>=nBALPN + nC15PN + nMULTIPN) && (j<nBALPN + nC15PN + nMULTIPN + nLNa)){
-		    if(rnd.repick()<0.5){
+		    kakuritsu_LNtoLN = 0.5
+		    /*
+		    if(pc.id == 0){
+			kakuritsu_LNtoLN = 0.0
+		    }else if(pc.id == 1){
+			kakuritsu_LNtoLN = 0.2
+		    }else if(pc.id == 2){
+			kakuritsu_LNtoLN = 0.4
+		    }else if(pc.id == 3){
+			kakuritsu_LNtoLN = 0.6
+		    }else if(pc.id == 4){
+			kakuritsu_LNtoLN = 0.8
+		    }else if(pc.id == 5){
+			kakuritsu_LNtoLN = 1.0
+		    }*//*else if(pc.id == 6){
+			kakuritsu_LNtoLN = 0.6
+		    }else if(pc.id == 7){
+			kakuritsu_LNtoLN = 0.7
+		    }*/
+
+		    if(rnd.repick()<kakuritsu_LNtoLN){
+			gmax_LNtoLN = 0.3
+			/*
+			if(pc.id == 0){
+			    gmax_LNtoLN = 0.0
+			}else if(pc.id == 1){
+			    gmax_LNtoLN = 0.1
+			}else if(pc.id == 2){
+			    gmax_LNtoLN = 0.2
+			}else if(pc.id == 3){
+			    gmax_LNtoLN = 0.3
+			}else if(pc.id == 4){
+			    gmax_LNtoLN = 0.4
+			}else if(pc.id == 5){
+			    gmax_LNtoLN = 0.5
+			}*//*else if(pc.id == 6){
+			    gmax_LNtoLN = 0.6
+			}else if(pc.id == 7){
+			    gmax_LNtoLN = 0.7
+			}*/
 			//gaba = cells.object(i).setgaba(1.75/nLNa)
 			//gaba = cells.object(i).setgaba(0.35/nLNa)
-			gaba = cells.object(i).setgaba(0.3/nLNa)
+			gaba = cells.object(i).setgaba(gmax_LNtoLN/nLNa)
 			setpointer gaba.pre, cells.object(j).soma.v(0.5)
 			gabalist.append(gaba)
 			print i, j
@@ -274,22 +353,49 @@ proc mkstim_random(){local i
     r_delay2 = new Random()
     r_imax1 = new Random()
     r_imax2 = new Random()
+    
+    delay2 = 200
+    /*
+    if(pc.id == 0){
+	delay2 = 0
+    }else if(pc.id == 1){
+	delay2 = 100
+    }else if(pc.id == 2){
+	delay2 = 200
+    }*//*else if(pc.id == 3){
+	delay2 = -50
+    }else if(pc.id == 4){
+	delay2 = 0
+    }else if(pc.id == 5){
+	delay2 = 50
+    }else if(pc.id == 6){
+	delay2 = 100
+    }else if(pc.id == 7){
+	delay2 = 150
+    }
+    */
     r_delay1.uniform(0,50)
-    r_delay2.uniform(200,250)
+    r_delay2.uniform(delay2,delay2+50)
     //r_imax1.uniform(3800,3800)
     r_imax1.uniform(35000,35000)
     //r_imax2.uniform(9400,9400)
     r_imax2.uniform(15000,15000)
-    
+    /*
+    imax1 = 35000*0.5
+    imax2 = 15000*0.75
+    */
+    imax1 = 35000*1.5
+    imax2 = 15000*1.25
+    /*
     if(pc.id == 0){
 	imax1 = 35000*1.0
 	imax2 = 15000*1.0
     }else if(pc.id == 1){
-	imax1 = 35000*0.8
-	imax2 = 15000*0.9
+	imax1 = 35000*1.5
+	imax2 = 15000*1.25
     }else if(pc.id == 2){
-	imax1 = 35000*0.6
-	imax2 = 15000*0.8
+	imax1 = 35000*0.5
+	imax2 = 15000*0.75
     }else if(pc.id == 3){
 	imax1 = 35000*1.2
 	imax2 = 15000*1.1
@@ -299,7 +405,14 @@ proc mkstim_random(){local i
     }else if(pc.id == 5){
 	imax1 = 35000*1.6
 	imax2 = 15000*1.3
-    }
+    }else if(pc.id == 6){
+	imax1 = 35000*1.8
+	imax2 = 15000*1.4
+    }else if(pc.id == 7){
+	imax1 = 35000*0.4
+	imax2 = 15000*0.7
+    }*/
+    
     Interval = 300
     for i = 0, cells.count -1 {
 	if(cells.object(i).type == 1){
@@ -383,20 +496,23 @@ proc printSpikeRecord(){local i
     for i = 0, cells.count -1{
 	if(cells.object(i).type<4){
 	    if(i%1==0){
-		cells.object(i).printSpikeRecord2(pc.id,i, Interval,TSTOP,imax1,imax2)
+		cells.object(i).printSpikeRecord2(pc.id,i, Interval,TSTOP,imax1,kakuritsu_LNtoLN)
+		//		cells.object(i).printSpikeRecord2(pc.id,i, Interval,TSTOP,imax1,imax2)
 	    }
 	}else{
 	    if(i%10==0){
-		cells.object(i).printSpikeRecord2(pc.id,i, Interval,TSTOP,imax1,imax2)
+		//		cells.object(i).printSpikeRecord2(pc.id,i, Interval,TSTOP,imax1,imax2)
+		cells.object(i).printSpikeRecord2(pc.id,i, Interval,TSTOP,imax1,kakuritsu_LNtoLN)
 	    }
 	}
     }
 }
+
 printSpikeRecord()
 proc printVoltageRecord(){
     for i = 0, cells.count -1{
 	if(cells.object(i).type<4){
-	    if(i%3==0){
+	    if(i%1==0){
 		cells.object(i).printVoltageRecord3(pc.id,i)
 	    }
 	}else{

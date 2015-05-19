@@ -13,12 +13,19 @@
 #2015.03.31
 #CSVファイル作成機能追加
 
+#2015.05.17 X range chaned [1:-1]
+#2015.05.17 fontsize is changed
+
 import matplotlib.pyplot as plt
 import numpy as np
 import math
 import sys
 import os.path
 import csv
+import matplotlib
+matplotlib.rc('xtick',labelsize = 15)
+matplotlib.rc('ytick',labelsize = 15)
+
 
 interval = -1
 delay = -1
@@ -33,7 +40,8 @@ def readSpikeRecordFile(filename):
     size = int(data[2].split(":")[1])
     tstop = int(data[3].split(":")[1])
     istim1 = int(data[4].split(":")[1])
-    istim2 = int(data[5].split(":")[1])
+    #istim2 = int(data[5].split(":")[1])
+    istim2 = float(data[5].split(":")[1])
 
     print "Interval : %d, Delay : %f, number of data : %d, tstop : %d"%(interval, delay, size, tstop)
     spt = [] #spike timing
@@ -51,7 +59,7 @@ def readSpikeRecordFile(filename):
 
 def reconstruct_data(spt):
     num = int(math.ceil(float(tstop)/float(interval)))
-    print num, float(tstop)/float(interval)
+    #print num, float(tstop)/float(interval)
     #print "Interval : %d, Delay : %f, number of data : %d, tstop : %d"%(interval, delay, size, tstop)
     pulses = [[] for i in range(num+1)]
     cnt = 0
@@ -75,7 +83,7 @@ def reconstruct_data(spt):
 
     cnt2 = 0
     for j in range(len(pulses)):
-        print pulses[j]
+        #print pulses[j]
         cnt2 += len(pulses[j])
     #Error check
     #print cnt2
@@ -100,9 +108,9 @@ def drawSpikeCounts(pulses,filename,show):
         writer.writerow([i[k],length[k]])
 
     f.close()
-    plt.plot(i[1:],length[1:])
-    plt.xlabel("stimulus pulse number")
-    plt.ylabel("Spike Counts[spikes]")
+    plt.plot(i[1:-1],length[1:-1])
+    plt.xlabel("stimulus pulse number",fontsize=15)
+    plt.ylabel("Spike Counts[spikes]",fontsize=15)
     tmp = filename.rsplit('.',1)
     imgFilename = "%s_spikecounts.png"%tmp[0]
     plt.savefig(imgFilename)
@@ -136,9 +144,9 @@ def drawPeakISF(pulses,filename,show):
         writer.writerow([x[i],peakISF[i]])
     f.close()
    
-    plt.plot(x[1:], peakISF[1:])
-    plt.ylabel("peak ISF[Hz]")
-    plt.xlabel("stimulus pulse number")
+    plt.plot(x[1:-1], peakISF[1:-1])
+    plt.ylabel("peak ISF[Hz]",fontsize=15)
+    plt.xlabel("stimulus pulse number",fontsize=15)
     imgFilename = "%s_PeakISF.png"%tmp[0]
     plt.savefig(imgFilename)
     if(show == True):

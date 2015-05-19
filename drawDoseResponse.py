@@ -13,6 +13,8 @@ import os.path
 import csv
 import re
 
+import pickle
+
 class Data():
     pcid = 0
     cellid = 0
@@ -47,8 +49,8 @@ def readSpikeRecordFile(filename):
     spts.append(spt)
     return spt
 
+peakISF = []
 def drawDoseResponse():
-    peakISF = []
     for spt in spts:
         maximum = 0
         for i in range(len(spt)-1):
@@ -58,22 +60,25 @@ def drawDoseResponse():
         peakISF.append(maximum)
 
     fig = plt.figure()
+    # From fujiwara 2014
     X = [1,10,100,1000,5000]
     Y = [25,75,175,260,270]
     
     Z = []
     X1 = []
     for y in Y:
-        y = y * 170/270
+        #y = y * 170/270
+        y = y
         Z.append(y)
         print y
     for x in X:
-        x = x * 1000
+        #x = x * 1000
         X1.append(x)
         print x
         
-    plt.plot(X1,Z)
+    #plt.plot(X1,Z)
     plt.plot(istims,peakISF,"o")
+    plt.xlim(100,1000000)
     plt.xscale('log')
     plt.xlabel("Imax[nA/cm2]")
     plt.ylabel("Peak ISF[Hz]")
@@ -94,3 +99,14 @@ if len(sys.argv) is 2:
                     print full_dir                    
                     readSpikeRecordFile(full_dir)
         drawDoseResponse()
+
+f1 = open('istims.pkl','wb')
+pickle.dump(istims,f1)
+f1.close()
+
+f2 = open('peakISF.pkl','wb')
+pickle.dump(peakISF,f2)
+f2.close()
+
+for i in range(len(istims)):
+    print "%d %d"%(istims[i],peakISF[i])
