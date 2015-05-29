@@ -7,7 +7,7 @@ public biophys, connect2target, setGABAlla,setGABAllb, setIclamp, setStim, setEx
 public setgaba, setIntermitStim, setIntermitStim1
 public insertPN, insertLNlla,insertLNllb, insertFukuda, insertPas, insertHH
 public insertMsLN, insertIAHP, insertICA,insertIAHP2, insertCAD, insertLNlla2, insertLNlla3
-public insertLNlla4, insertLNllb2
+public insertLNlla4, insertLNllb2, insertFukuda_tunned
 public setVoltageRecord, printVoltageRecord, printVoltageRecord2
 public synlist,gabalist
 public type, setType
@@ -282,6 +282,20 @@ proc insertFukuda(){
 	ek_GPeA = -70
 	eca_GPeA = 124
 	el_GPeA = -50
+    }
+}
+proc insertFukuda_tunned(){
+    mechanism_flg = 3
+    forall{
+	insert GPeA
+	ena_GPeA = 55
+	ek_GPeA = -70
+	eca_GPeA = 124
+	el_GPeA = -50
+	//a_m_GPeA = 0.065
+	a_m_GPeA = 0.048
+	//a_W_GPeA = 0.055
+	a_W_GPeA = 0.060
     }
 }
 proc insertHH(){

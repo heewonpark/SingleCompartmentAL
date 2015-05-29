@@ -4,8 +4,8 @@ pc = new ParallelContext()
 {load_file("Stick.hoc")}
 {load_file("ranstream.hoc")}
 
-NCELL = 200
-TSTOP = 200
+NCELL = 500
+TSTOP = 700
 proc mknet(){
     mkcells($1)
 }
@@ -16,16 +16,27 @@ proc mkcells(){local i, ncell localobj cell,nc,nil
     for(i=pc.id;i<ncell;i+=pc.nhost){
 	cell = new Stick()
 	cells.append(cell)
-	/*
+	
 	//Fukuda model
 	cell.insertFukuda()
 	cell.setType(1)
-	*/
 	
+	cell.soma{
+	    //tau_w_GPeA = 
+	    //tau_X_GPeA = 
+	    //a_m_GPeA = 0.065
+	    a_m_GPeA = 0.048
+	    //a_W_GPeA = 0.055
+	    a_W_GPeA = 0.060
+	    //lambda_GPeA = 0.05
+	}
+
+
+	/*
 	//MsLN
 	cell.insertLNlla3()
 	cell.setType(4)
-	
+	*/
 	/*
 	//Hodgkin-Huxley model
 	cell.insertHH()
@@ -40,10 +51,10 @@ proc mkcells(){local i, ncell localobj cell,nc,nil
 mknet(NCELL)
 
 proc mkStim(){local i, ncell
-    MAX = 15000
+    MAX = 3000
     Interval = 300
     for i = 0, cells.count -1 {
-	cells.object(i).imax = MAX * (pc.nhost*i + pc.id) / NCELL * 25
+	cells.object(i).imax = MAX * (pc.nhost*i + pc.id) / NCELL * 60
 	print cells.object(i).imax
 	cells.object(i).setIntermitStim_gaus(30,cells.object(i).imax,Interval,0,-1,0.00)
     }
@@ -55,6 +66,12 @@ proc setSpikeRecord(){local i
     }
 }
 setSpikeRecord()
+proc setVoltageRecord(){local i
+    for i = 0, cells.count -1{
+	cells.object(i).setVoltageRecord()
+    }
+}
+setVoltageRecord()
 
 pc.barrier()
 tstop = TSTOP
@@ -67,6 +84,13 @@ proc printSpikeRecord(){local i
 	cells.object(i).printSpikeRecord2(pc.id,i, Interval,TSTOP,0,0)
     }
 }
+proc printVoltageRecord(){
+    for i = 0, cells.count -1{
+	cells.object(i).printVoltageRecord3(pc.id,i)
+    }
+}
+printVoltageRecord()
+
 
 printSpikeRecord()
 

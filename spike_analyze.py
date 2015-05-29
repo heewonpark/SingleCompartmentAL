@@ -111,6 +111,7 @@ def drawSpikeCounts(pulses,filename,show):
     plt.plot(i[1:-1],length[1:-1])
     plt.xlabel("stimulus pulse number",fontsize=15)
     plt.ylabel("Spike Counts[spikes]",fontsize=15)
+    plt.ylim(0,50)
     tmp = filename.rsplit('.',1)
     imgFilename = "%s_spikecounts.png"%tmp[0]
     plt.savefig(imgFilename)
@@ -147,6 +148,7 @@ def drawPeakISF(pulses,filename,show):
     plt.plot(x[1:-1], peakISF[1:-1])
     plt.ylabel("peak ISF[Hz]",fontsize=15)
     plt.xlabel("stimulus pulse number",fontsize=15)
+    plt.ylim(0,300)
     imgFilename = "%s_PeakISF.png"%tmp[0]
     plt.savefig(imgFilename)
     if(show == True):

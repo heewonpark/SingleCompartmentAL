@@ -244,7 +244,7 @@ extern void _cvode_abstol( Symbol**, double*, int);
      _nrn_setdata_reg(_mechtype, _setdata);
   hoc_register_dparam_size(_mechtype, 3);
  	hoc_register_var(hoc_scdoub, hoc_vdoub, hoc_intfunc);
- 	ivoc_help("help ?1 intermitStimGaus /home/park/Programming/hoc/Belmabrouk/mod/x86_64/intermittent_stim_gaus.mod\n");
+ 	ivoc_help("help ?1 intermitStimGaus /home/park/github/SingleCompartmentAL/mod/x86_64/intermittent_stim_gaus.mod\n");
  hoc_register_limits(_mechtype, _hoc_parm_limits);
  hoc_register_units(_mechtype, _hoc_parm_units);
  }

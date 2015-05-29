@@ -30,6 +30,10 @@
 #*
 *#
 
+# recorded data
+record/
+spikerecord/
+
 # Backup File (by Park)
 *.bk
 

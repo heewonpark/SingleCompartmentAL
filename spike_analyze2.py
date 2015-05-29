@@ -70,7 +70,7 @@ if len(sys.argv) is 2:
                     d1.cellid = cellid1
                     d1.filename= full_dir
                     case1.append(d1)
-                    if(cellid in cellides1)==False:
+                    if(cellid1 in cellides1)==False:
                         cellides1.append(cellid1)
                         #print cellid1
 
@@ -132,7 +132,7 @@ def drawPeakISFAllinOne():
                 #sdw= 0
         plt.ylabel("peak ISF[Hz]")
         plt.xlabel("stimulus pulse number")
-        plt.legend(loc=0)
+        #plt.legend(loc=0)
         imgFilename = "%speakISFAllinOne%d.png"%(sys.argv[1],cellides[i])
         plt.savefig(imgFilename)
         plt.close()
@@ -192,7 +192,7 @@ def drawSpikeCountAllinOne():
                 sssssssss = 0
         plt.ylabel("Spike counts[spikes]")
         plt.xlabel("stimulus pulse number")
-        plt.legend(loc=0)
+        #plt.legend(loc=0)
         imgFilename = "%sspikecountsAllinOne%d.png"%(sys.argv[1],cellides1[i])
         plt.savefig(imgFilename)
         plt.close()

@@ -245,7 +245,7 @@ extern void _cvode_abstol( Symbol**, double*, int);
   hoc_register_dparam_size(_mechtype, 3);
  	hoc_register_cvode(_mechtype, _ode_count, 0, 0, 0);
  	hoc_register_var(hoc_scdoub, hoc_vdoub, hoc_intfunc);
- 	ivoc_help("help ?1 GABA /home/park/Programming/hoc/Belmabrouk/mod/x86_64/gabaa.mod\n");
+ 	ivoc_help("help ?1 GABA /home/park/github/SingleCompartmentAL/mod/x86_64/gabaa.mod\n");
  hoc_register_limits(_mechtype, _hoc_parm_limits);
  hoc_register_units(_mechtype, _hoc_parm_units);
  }

@@ -5,17 +5,32 @@ objref cell
 cell = new Stick()
 
 //cell.insertPN()
-//cell.insertFukuda()
-cell.insertLN()
-cell.setIclamp()
-cell.setVoltageRecord()
-
+cell.insertFukuda()
 cell.soma{
-    print gnabar_MsLN
+    //tau_w_GPeA = 
+    //tau_X_GPeA = 
+    //a_m_GPeA = 0.065
+    a_m_GPeA = 0.048
+    a_W_GPeA = 0.060
+    //    a_X_GPeA = 0.071
+    //caGain_GPeA = 0.1
+    //tau_sK_GPeA = 250
+    //tau_sk_GPeA = 50
+    //a_sk_GPeA = 0.9
+    //C_gamma_GPeA = 250
+    //lambda_GPeA = 0.05
 }
-tstop = 10
+
+psection()
+//cell.setIntermitStim_gaus(10,50000,500,0,-1,0.00)
+cell.setIntermitStim_gaus(10,80000,300,0,-1,0.00)
+cell.setVoltageRecord()
+cell.setSpikeRecord()
+
+tstop = 700
 dt = 0.025
 
+//xopen("single.ses")
 run()
 /*
 while(t < tstop){
@@ -24,4 +39,6 @@ while(t < tstop){
 	print iahp_MsLN, q_MsLN, ica, cai, ina, ik
     }
 }*/
-cell.printVoltageRecord()
+//cell.printVoltageRecord()
+cell.printVoltageRecord3(0,0)
+cell.printSpikeRecord2(0,0,300,tstop,80000,0)

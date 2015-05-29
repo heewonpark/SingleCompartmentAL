@@ -174,7 +174,7 @@ extern void _cvode_abstol( Symbol**, double*, int);
      _nrn_thread_reg(_mechtype, 2, _update_ion_pointer);
   hoc_register_dparam_size(_mechtype, 4);
  	hoc_register_var(hoc_scdoub, hoc_vdoub, hoc_intfunc);
- 	ivoc_help("help ?1 IAHP2 /home/park/Programming/hoc/Belmabrouk/mod/x86_64/IAHP2.mod\n");
+ 	ivoc_help("help ?1 IAHP2 /home/park/github/SingleCompartmentAL/mod/x86_64/IAHP2.mod\n");
  hoc_register_limits(_mechtype, _hoc_parm_limits);
  hoc_register_units(_mechtype, _hoc_parm_units);
  }
