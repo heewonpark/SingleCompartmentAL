@@ -47,7 +47,7 @@ def drawGraph(filename, show):
     for j in range(1,nColumns):
         pylab.plot(vec[0], vec[j])
     #pylab.ylim(-100, 80)
-    pylab.xlim(0,4000)
+    #pylab.xlim(0,4000)
     pylab.xlabel("time[ms]",fontsize = 15)
     #pylab.ylabel("Stimulation input current[nA]")
     pylab.ylabel("membrain potential[mV]",fontsize=15)
