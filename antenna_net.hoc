@@ -21,7 +21,8 @@ nLNb = 0     // Number of LN-llb
 NCELL = nBALPN + nC15PN + nMULTIPN + nLNa + nLNb
 // NCELL : number of whole cells
 
-TSTOP = 6000
+TSTOP = 10000
+//TSTOP = 10
 
 print "NCELL ", NCELL
 
@@ -216,43 +217,43 @@ proc connectcells_withgaba(){local i,j, a_cnt, b_cnt localobj gaba
 		    kakuritsu_LNtoPN = 0.5
 		    /*
 		    if(pc.id == 0){
-			kakuritsu_LNtoPN = 0.2
+			kakuritsu_LNtoPN = 0.50
 		    }else if(pc.id == 1){
-			kakuritsu_LNtoPN = 0.4
+			kakuritsu_LNtoPN = 0.52
 		    }else if(pc.id == 2){
-			kakuritsu_LNtoPN = 0.6
+			kakuritsu_LNtoPN = 0.54
 		    }else if(pc.id == 3){
-			kakuritsu_LNtoPN = 0.8
-		    }*//*else if(pc.id == 4){
-			kakuritsu_LNtoPN = 0.5
+			kakuritsu_LNtoPN = 0.56
+		    }else if(pc.id == 4){
+			kakuritsu_LNtoPN = 0.58
 		    }else if(pc.id == 5){
-			kakuritsu_LNtoPN = 0.6
+			kakuritsu_LNtoPN = 0.60
 		    }else if(pc.id == 6){
-			kakuritsu_LNtoPN = 0.7
+			kakuritsu_LNtoPN = 0.62
 		    }else if(pc.id == 7){
-			kakuritsu_LNtoPN = 0.8
-		    }*/
-		    
+			kakuritsu_LNtoPN = 0.64
+		    }
+		    */
 		    if(rnd.repick()<kakuritsu_LNtoPN){
 			//gmax_LNtoPN = 2.0
-			gmax_LNtoPN = 3.4
+			gmax_LNtoPN = 3.6
 			/*
 			if(pc.id == 0){
-			    gmax_LNtoPN = 2.9
+			    gmax_LNtoPN = 3.40
 			}else if(pc.id == 1){
-			    gmax_LNtoPN = 3.0
+			    gmax_LNtoPN = 3.45
 			}else if(pc.id == 2){
-			    gmax_LNtoPN = 3.1
+			    gmax_LNtoPN = 3.50
 			}else if(pc.id == 3){
-			    gmax_LNtoPN = 3.2
+			    gmax_LNtoPN = 3.55
 			}else if(pc.id == 4){
-			    gmax_LNtoPN = 3.3
+			    gmax_LNtoPN = 3.60
 			}else if(pc.id == 5){
-			    gmax_LNtoPN = 3.4
+			    gmax_LNtoPN = 3.65
 			}else if(pc.id == 6){
-			    gmax_LNtoPN = 3.5
+			    gmax_LNtoPN = 3.70
 			}else if(pc.id == 7){
-			    gmax_LNtoPN = 0.1
+			    gmax_LNtoPN = 3.75
 			}
 			*/
 			gaba = cells.object(i).setgaba(gmax_LNtoPN/nBALPN)
@@ -299,24 +300,24 @@ proc connectcells_withgaba(){local i,j, a_cnt, b_cnt localobj gaba
 
 		    if(rnd.repick()<kakuritsu_LNtoLN){
 			//gmax_LNtoLN = 0.3
-			gmax_LNtoLN = 1.0
+			gmax_LNtoLN = 1.05
 			/*
 			if(pc.id == 0){
-			    gmax_LNtoLN = 0.2
+			    gmax_LNtoLN = 0.90
 			}else if(pc.id == 1){
-			    gmax_LNtoLN = 0.4
+			    gmax_LNtoLN = 0.93
 			}else if(pc.id == 2){
-			    gmax_LNtoLN = 0.6
+			    gmax_LNtoLN = 0.96
 			}else if(pc.id == 3){
-			    gmax_LNtoLN = 0.8
+			    gmax_LNtoLN = 0.99
 			}else if(pc.id == 4){
-			    gmax_LNtoLN = 1.0
+			    gmax_LNtoLN = 1.02
 			}else if(pc.id == 5){
-			    gmax_LNtoLN = 1.2
+			    gmax_LNtoLN = 1.05
 			}else if(pc.id == 6){
-			    gmax_LNtoLN = 1.4
+			    gmax_LNtoLN = 1.08
 			}else if(pc.id == 7){
-			    gmax_LNtoLN = 1.6
+			    gmax_LNtoLN = 1.11
 			}*/
 			//gaba = cells.object(i).setgaba(1.75/nLNa)
 			//gaba = cells.object(i).setgaba(0.35/nLNa)
@@ -390,36 +391,36 @@ proc mkstim_random(){local i
     /*
     imax1 = 35000*0.5
     imax2 = 15000*0.75
+    *//*
+    imax1 = 18000
+    imax2 = 8000
     */
-    imax1 = 80000
-    imax2 = 30000
-    
     if(pc.id == 0){
 	imax1 = 80000
-	imax2 = 30000
-    }else if(pc.id == 1){
-	imax1 = 80000
-	imax2 = 30500
-    }else if(pc.id == 2){
-	imax1 = 80000
-	imax2 = 31000
-    }else if(pc.id == 3){
-	imax1 = 80000
 	imax2 = 31500
-    }/*else if(pc.id == 4){
-	imax1 = 80000
-	imax2 = 40000
+    }else if(pc.id == 1){
+	imax1 = 29000
+	imax2 = 17500
+    }else if(pc.id == 2){
+	imax1 = 18000
+	imax2 = 14350
+    }/*else if(pc.id == 3){
+	imax1 = 18000
+	imax2 = 14450
+    }else if(pc.id == 4){
+	imax1 = 29000
+	imax2 = 17400
     }else if(pc.id == 5){
-	imax1 = 80000
-	imax2 = 45000
+	imax1 = 29000
+	imax2 = 17350
     }else if(pc.id == 6){
-	imax1 = 80000
-	imax2 = 50000
+	imax1 = 29000
+	imax2 = 17300
     }else if(pc.id == 7){
-	imax1 = 80000
-	imax2 = 55000
-    }
-    */
+	imax1 = 29000
+	imax2 = 17250
+    }*/
+    
     Interval = 300
     for i = 0, cells.count -1 {
 	if(cells.object(i).type == 1){
@@ -436,7 +437,7 @@ proc mkstim_random(){local i
 	    //cells.object(i).setStim(r_delay.repick(),r_imax2.repick())
 	    //print "type 4 ",i
 	    cells.object(i).Delay = r_delay2.repick()
-	    cells.object(i).setIntermitStim_gaus(cells.object(i).Delay,imax2,Interval,imax2,20,0.00)
+	    cells.object(i).setIntermitStim_gaus(cells.object(i).Delay,imax2,Interval,0,-1,0.00)
 	}else if(cells.object(i).type == 5){
 	    cells.object(i).setStim(r_delay2.repick(),r_imax2.repick())
 	}
@@ -502,14 +503,14 @@ proc spikeout(){local i, rank
 proc printSpikeRecord(){local i
     for i = 0, cells.count -1{
 	if(cells.object(i).type<4){
-	    if(i%4==0){
-		cells.object(i).printSpikeRecord2(pc.id,i, Interval,TSTOP,imax1,kakuritsu_LNtoLN)
+	    if(i%1==0){
+		cells.object(i).printSpikeRecord2(pc.id,i, Interval,TSTOP,imax1,imax2)
 		//		cells.object(i).printSpikeRecord2(pc.id,i, Interval,TSTOP,imax1,imax2)
 	    }
 	}else{
 	    if(i%40==0){
 		//		cells.object(i).printSpikeRecord2(pc.id,i, Interval,TSTOP,imax1,imax2)
-		cells.object(i).printSpikeRecord2(pc.id,i, Interval,TSTOP,imax1,kakuritsu_LNtoLN)
+		cells.object(i).printSpikeRecord2(pc.id,i, Interval,TSTOP,imax1,imax2)
 	    }
 	}
     }
@@ -519,7 +520,7 @@ printSpikeRecord()
 proc printVoltageRecord(){
     for i = 0, cells.count -1{
 	if(cells.object(i).type<4){
-	    if(i%4==0){
+	    if(i%1==0){
 		cells.object(i).printVoltageRecord3(pc.id,i)
 	    }
 	}else{

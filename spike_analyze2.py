@@ -104,23 +104,24 @@ def drawPeakISFAllinOne():
                     
                 f.close()
         
-        fig = plt.figure()
+        fig = plt.figure(figsize=(10,5.0))
         x = [j for j in range(len(rowdata[c.pcid]))]
         #plt.plot(x[1:20],rowdata[0][1:20],color='r')
         #plt.plot(x[1:20],rowdata[1][1:20],color='b')
         #plt.plot(x[1:20],rowdata[2][1:20],color='g')
         
-        #plt.plot(x[21:-1],rowdata[0][21:-1],color='r',label = 'delay = 0')
-        #plt.plot(x[21:-1],rowdata[1][21:-1],color='b',label = 'delay = 100')
-        #plt.plot(x[21:-1],rowdata[2][21:-1],color='g',label = 'delay = 200')
-        for k in range(0,len(rowdata)):
-            if(len(rowdata[k])!=0):
+        plt.plot(x[1:31],rowdata[0][1:31],color='r',label = '1000ng')
+        plt.plot(x[1:31],rowdata[1][1:31],color='b',label = '100ng')
+        plt.plot(x[1:31],rowdata[2][1:31],color='g',label = '10ng')
+
+        #for k in range(0,len(rowdata)):
+            #if(len(rowdata[k])!=0):
                 #Label = "I1=%d, I2=%d"%(int(istim1[k]),int(istim2[k]))
                 #plt.plot(x[21:-1],rowdata[k][21:-1],label = Label)
                 #Label = "P(LN-PN):%.1f"%((k+1)*0.2)
-                Label = "Gmax:%.1f"%((k+1)*0.5)
-                plt.plot(x[1: 20],rowdata[k][1: 20],color =clist[k],label = Label)
-                plt.plot(x[21:-1],rowdata[k][21:-1],color =clist[k])
+                #Label = "Gmax:%.1f"%((k+1)*0.5)
+                #plt.plot(x[1: 20],rowdata[k][1: 20],color =clist[k],label = Label)
+                #plt.plot(x[21:-1],rowdata[k][21:-1],color =clist[k])
                 #plt.plot(x[1:31],rowdata[k][1:31],color =clist[k])
 
         #plt.plot(x[1:20],rowdata[0][1:20])
@@ -132,7 +133,8 @@ def drawPeakISFAllinOne():
                 #sdw= 0
         plt.ylabel("peak ISF[Hz]")
         plt.xlabel("stimulus pulse number")
-        #plt.legend(loc=0)
+
+        plt.legend(loc=0)
         imgFilename = "%speakISFAllinOne%d.png"%(sys.argv[1],cellides[i])
         plt.savefig(imgFilename)
         plt.close()
@@ -187,8 +189,9 @@ def drawSpikeCountAllinOne():
                 #Label = "Gmax:%.1f"%(k*0.1)
                 #Label = "Gmax:%.1f"%((k+1)*0.5)
                 #Label = "P(LN-PN):%.1f"%((k+1)*0.2)
-                plt.plot(x[1: 20],rowdata[k][1: 20],color =clist[k])
-                plt.plot(x[21:-1],rowdata[k][21:-1],color =clist[k])
+                #plt.plot(x[1: 20],rowdata[k][1: 20],color =clist[k])
+                #plt.plot(x[21:-1],rowdata[k][21:-1],color =clist[k])
+                plt.plot(x[1:31],rowdata[k][1:31],color =clist[k])
                 sssssssss = 0
         plt.ylabel("Spike counts[spikes]")
         plt.xlabel("stimulus pulse number")

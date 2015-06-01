@@ -627,7 +627,6 @@ proc printSpikeRecord2(){local i, interval,tstop, istim1, istim2
     tstop = $4
     istim1 = $5
     istim2 = $6
-    istim1 = imax
     fileSR = new File()
     strdef filename
     sprint(filename,"./spikerecord/%dspikerecord_%s%d.dat",pcid,typename[type].s,n)
